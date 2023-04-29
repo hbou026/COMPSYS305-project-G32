@@ -1,0 +1,31 @@
+-- clk converter from 50Mhz to 25Mhz
+-- Written by Harrison Bound hbou026, April 29th 2023
+
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity clk_25_converter is
+    port (clock_50 : in std_logic;
+     clock_25 : out std_logic);
+end entity clk_25_converter;
+
+architecture behaviour of clk_25_converter is
+signal v_clk_out : std_logic := '1';
+signal clk_count : std_logic := '0';
+begin
+    process (clock_50)
+        begin
+            if (rising_edge(clock_50)) then
+                clk_count <= not clk_count;
+
+                -- change 25Mhz signal half as often as 50Mhz signal
+                if (clk_count = '0') then
+                    v_clk_out <= not v_clk_out;
+                end if;
+            end if;
+        clock_25 <= v_clk_out;
+    end process;
+end architecture behaviour;

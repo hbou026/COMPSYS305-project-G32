@@ -1,0 +1,41 @@
+-- Code to control leds for when mouse is clicked
+-- Written by Harrison Bound with assistance from ChatGPT
+-- April 29th, 2023
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity mouse_led is
+    Port ( clk : in  STD_LOGIC;
+           btn : in  STD_LOGIC;
+           led : out STD_LOGIC);
+end entity mouse_led;
+
+architecture Behavioral of mouse_led is
+    type state_type is (WAIT, TOGGLE);
+    signal state : state_type := WAIT;
+    signal btn_prev : STD_LOGIC := '0';
+    signal led_state : STD_LOGIC := '0';
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            case state is
+                when WAIT =>
+                    if btn = '1' and btn_prev = '0' then
+                        state <= TOGGLE;
+                    end if;
+                when TOGGLE =>
+                    led_state <= not led_state;
+                    state <= WAIT;
+                when others =>
+                    state <= WAIT;
+            end case;
+        end if;
+    end process;
+    
+    led <= led_state;
+    btn_prev <= btn;
+    
+end Behavioral;
+
