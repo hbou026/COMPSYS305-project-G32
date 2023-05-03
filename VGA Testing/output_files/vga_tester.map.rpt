@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_tester
-Wed May 03 20:55:17 2023
+Wed May 03 21:52:51 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,12 +14,15 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  9. State Machine - |vga_tester|MOUSE:inst4|mouse_state
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -45,14 +48,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 03 20:55:17 2023       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 03 21:52:51 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; vga_tester                                  ;
 ; Top-level Entity Name           ; vga_tester                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 29                                          ;
-; Total pins                      ; 9                                           ;
+; Total registers                 ; 125                                         ;
+; Total pins                      ; 8                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -178,6 +181,8 @@ refer to the applicable agreement for further details.
 ; vga_tester.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/VGA Testing/vga_tester.bdf           ;          ;
 ; pll25Mhz.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/VGA Testing/pll25Mhz.vhd             ; pll25Mhz ;
 ; pll25Mhz/pll25Mhz_0002.v         ; yes             ; User Verilog HDL File              ; C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/VGA Testing/pll25Mhz/pll25Mhz_0002.v ; pll25Mhz ;
+; ../bouncy_ball.vhd               ; yes             ; User VHDL File                     ; C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/bouncy_ball.vhd                      ;          ;
+; ../Mouse Testing/mouse.vhd       ; yes             ; User VHDL File                     ; C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd              ;          ;
 ; altera_pll.v                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                                                           ;          ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+----------+
 
@@ -187,18 +192,18 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                             ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 24                                                                                ;
+; Estimate of Logic utilization (ALMs needed) ; 93                                                                                ;
 ;                                             ;                                                                                   ;
-; Combinational ALUT usage for logic          ; 39                                                                                ;
-;     -- 7 input functions                    ; 0                                                                                 ;
-;     -- 6 input functions                    ; 7                                                                                 ;
-;     -- 5 input functions                    ; 3                                                                                 ;
-;     -- 4 input functions                    ; 1                                                                                 ;
-;     -- <=3 input functions                  ; 28                                                                                ;
+; Combinational ALUT usage for logic          ; 155                                                                               ;
+;     -- 7 input functions                    ; 1                                                                                 ;
+;     -- 6 input functions                    ; 20                                                                                ;
+;     -- 5 input functions                    ; 20                                                                                ;
+;     -- 4 input functions                    ; 19                                                                                ;
+;     -- <=3 input functions                  ; 95                                                                                ;
 ;                                             ;                                                                                   ;
-; Dedicated logic registers                   ; 29                                                                                ;
+; Dedicated logic registers                   ; 125                                                                               ;
 ;                                             ;                                                                                   ;
-; I/O pins                                    ; 9                                                                                 ;
+; I/O pins                                    ; 8                                                                                 ;
 ;                                             ;                                                                                   ;
 ; Total DSP Blocks                            ; 0                                                                                 ;
 ;                                             ;                                                                                   ;
@@ -206,9 +211,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                                 ;
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 30                                                                                ;
-; Total fan-out                               ; 224                                                                               ;
-; Average fan-out                             ; 2.57                                                                              ;
+; Maximum fan-out                             ; 77                                                                                ;
+; Total fan-out                               ; 883                                                                               ;
+; Average fan-out                             ; 2.95                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -217,8 +222,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Entity Name   ; Library Name ;
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+---------------+--------------+
-; |vga_tester                         ; 39 (0)              ; 29 (0)                    ; 0                 ; 0          ; 9    ; 0            ; |vga_tester                                                                    ; vga_tester    ; work         ;
-;    |VGA_SYNC:inst|                  ; 39 (39)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|VGA_SYNC:inst                                                      ; VGA_SYNC      ; work         ;
+; |vga_tester                         ; 155 (0)             ; 125 (0)                   ; 0                 ; 0          ; 8    ; 0            ; |vga_tester                                                                    ; vga_tester    ; work         ;
+;    |MOUSE:inst4|                    ; 47 (47)             ; 65 (65)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|MOUSE:inst4                                                        ; MOUSE         ; work         ;
+;    |VGA_SYNC:inst|                  ; 41 (41)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|VGA_SYNC:inst                                                      ; VGA_SYNC      ; work         ;
+;    |bouncy_ball:inst3|              ; 67 (67)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|bouncy_ball:inst3                                                  ; bouncy_ball   ; work         ;
 ;    |pll25Mhz:inst1|                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|pll25Mhz:inst1                                                     ; pll25Mhz      ; pll25mhz     ;
 ;       |pll25Mhz_0002:pll25mhz_inst| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst                         ; pll25Mhz_0002 ; pll25Mhz     ;
 ;          |altera_pll:altera_pll_i|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i ; altera_pll    ; work         ;
@@ -235,28 +242,77 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+----------------------------+-----------------+
 
 
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |vga_tester|MOUSE:inst4|mouse_state                                                                                                                                                     ;
++-------------------------------+---------------------------+--------------------------+-------------------------------+---------------------------+--------------------------+---------------------------+
+; Name                          ; mouse_state.INPUT_PACKETS ; mouse_state.WAIT_CMD_ACK ; mouse_state.WAIT_OUTPUT_READY ; mouse_state.LOAD_COMMAND2 ; mouse_state.LOAD_COMMAND ; mouse_state.INHIBIT_TRANS ;
++-------------------------------+---------------------------+--------------------------+-------------------------------+---------------------------+--------------------------+---------------------------+
+; mouse_state.INHIBIT_TRANS     ; 0                         ; 0                        ; 0                             ; 0                         ; 0                        ; 0                         ;
+; mouse_state.LOAD_COMMAND      ; 0                         ; 0                        ; 0                             ; 0                         ; 1                        ; 1                         ;
+; mouse_state.LOAD_COMMAND2     ; 0                         ; 0                        ; 0                             ; 1                         ; 0                        ; 1                         ;
+; mouse_state.WAIT_OUTPUT_READY ; 0                         ; 0                        ; 1                             ; 0                         ; 0                        ; 1                         ;
+; mouse_state.WAIT_CMD_ACK      ; 0                         ; 1                        ; 0                             ; 0                         ; 0                        ; 1                         ;
+; mouse_state.INPUT_PACKETS     ; 1                         ; 0                        ; 0                             ; 0                         ; 0                        ; 1                         ;
++-------------------------------+---------------------------+--------------------------+-------------------------------+---------------------------+--------------------------+---------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++----------------------------------------+------------------------------------------------+
+; Register name                          ; Reason for Removal                             ;
++----------------------------------------+------------------------------------------------+
+; MOUSE:inst4|CHAROUT[4..7]              ; Stuck at VCC due to stuck port data_in         ;
+; MOUSE:inst4|CHAROUT[3]                 ; Stuck at GND due to stuck port data_in         ;
+; MOUSE:inst4|CHAROUT[2]                 ; Stuck at VCC due to stuck port data_in         ;
+; MOUSE:inst4|CHAROUT[0,1]               ; Stuck at GND due to stuck port data_in         ;
+; MOUSE:inst4|SHIFTOUT[10]               ; Stuck at VCC due to stuck port data_in         ;
+; bouncy_ball:inst3|ball_y_motion[2]     ; Merged with bouncy_ball:inst3|ball_y_motion[1] ;
+; bouncy_ball:inst3|ball_y_motion[4..9]  ; Merged with bouncy_ball:inst3|ball_y_motion[3] ;
+; bouncy_ball:inst3|ball_y_motion[0]     ; Stuck at VCC due to stuck port data_in         ;
+; VGA_SYNC:inst|pixel_row[9]             ; Stuck at GND due to stuck port data_in         ;
+; Total Number of Removed Registers = 18 ;                                                ;
++----------------------------------------+------------------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 29    ;
+; Total registers                              ; 125   ;
 ; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Clock Enable       ; 75    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |vga_tester|VGA_SYNC:inst|v_count[9] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; MOUSE:inst4|send_char                  ; 3       ;
+; MOUSE:inst4|SHIFTOUT[3]                ; 1       ;
+; MOUSE:inst4|SHIFTOUT[5]                ; 1       ;
+; MOUSE:inst4|SHIFTOUT[6]                ; 1       ;
+; MOUSE:inst4|SHIFTOUT[7]                ; 1       ;
+; MOUSE:inst4|SHIFTOUT[8]                ; 1       ;
+; Total number of inverted registers = 6 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |vga_tester|VGA_SYNC:inst|v_count[4]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |vga_tester|bouncy_ball:inst3|ball_y_motion[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------+
@@ -511,24 +567,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 29                          ;
+; arriav_ff             ; 125                         ;
+;     CLR               ; 1                           ;
+;     ENA               ; 50                          ;
+;     ENA CLR           ; 15                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
-;     plain             ; 9                           ;
-; arriav_lcell_comb     ; 39                          ;
-;     arith             ; 20                          ;
-;         1 data inputs ; 20                          ;
-;     normal            ; 19                          ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 3                           ;
-;         6 data inputs ; 7                           ;
-; boundary_port         ; 9                           ;
+;     plain             ; 39                          ;
+; arriav_io_obuf        ; 2                           ;
+; arriav_lcell_comb     ; 155                         ;
+;     arith             ; 69                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 57                          ;
+;         2 data inputs ; 10                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 85                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 19                          ;
+;         5 data inputs ; 20                          ;
+;         6 data inputs ; 20                          ;
+; boundary_port         ; 8                           ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.80                        ;
+; Max LUT depth         ; 4.70                        ;
+; Average LUT depth     ; 2.28                        ;
 +-----------------------+-----------------------------+
 
 
@@ -547,7 +612,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed May 03 20:55:02 2023
+    Info: Processing started: Wed May 03 21:52:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_tester -c vga_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -561,6 +626,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file pll25mh
     Info (12023): Found entity 1: pll25Mhz File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/VGA Testing/pll25Mhz.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file pll25mhz/pll25mhz_0002.v
     Info (12023): Found entity 1: pll25Mhz_0002 File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 2
+Info (12021): Found 2 design units, including 1 entities, in source file /users/harri/desktop/compsys305 mini project/miniprojectresources/miniprojectresources/bouncy_ball.vhd
+    Info (12022): Found design unit 1: bouncy_ball-behavior File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/bouncy_ball.vhd Line: 14
+    Info (12023): Found entity 1: bouncy_ball File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/bouncy_ball.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/harri/desktop/compsys305 mini project/miniprojectresources/miniprojectresources/mouse testing/mouse.vhd
+    Info (12022): Found design unit 1: MOUSE-behavior File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd Line: 18
+    Info (12023): Found entity 1: MOUSE File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd Line: 9
 Info (12127): Elaborating entity "vga_tester" for the top level hierarchy
 Info (12128): Elaborating entity "VGA_SYNC" for hierarchy "VGA_SYNC:inst"
 Info (12128): Elaborating entity "pll25Mhz" for hierarchy "pll25Mhz:inst1"
@@ -629,6 +700,15 @@ Info (12133): Instantiated megafunction "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_i
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
+Info (12128): Elaborating entity "bouncy_ball" for hierarchy "bouncy_ball:inst3"
+Info (12128): Elaborating entity "MOUSE" for hierarchy "MOUSE:inst4"
+Warning (10036): Verilog HDL or VHDL warning at mouse.vhd(25): object "CHARIN" assigned a value but never read File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at mouse.vhd(151): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd Line: 151
+Warning (10492): VHDL Process Statement warning at mouse.vhd(155): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd Line: 155
+Warning (10492): VHDL Process Statement warning at mouse.vhd(156): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd Line: 156
+Warning (10492): VHDL Process Statement warning at mouse.vhd(157): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd Line: 157
+Info (13000): Registers with preset signals will power-up high File: C:/Users/harri/Desktop/COMPSYS305 Mini Project/MiniprojectResources/MiniprojectResources/Mouse Testing/mouse.vhd Line: 146
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 230 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50 -entity DE0_CV_Default was ignored
@@ -865,14 +945,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Info (21057): Implemented 215 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 42 logic cells
+    Info (21060): Implemented 2 bidirectional pins
+    Info (21061): Implemented 206 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 233 warnings
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Wed May 03 20:55:17 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 238 warnings
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Wed May 03 21:52:51 2023
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:30
 

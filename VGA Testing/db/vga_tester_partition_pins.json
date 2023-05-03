@@ -24,15 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[2]",
+					"name" : "PS2_DAT",
 					"strict" : false
 				},
 				{
-					"name" : "SW[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[0]",
+					"name" : "PS2_CLK",
 					"strict" : false
 				}
 			]

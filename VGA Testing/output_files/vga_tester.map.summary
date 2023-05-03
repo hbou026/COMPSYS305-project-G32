@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed May 03 20:55:17 2023
+Analysis & Synthesis Status : Successful - Wed May 03 21:52:51 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : vga_tester
 Top-level Entity Name : vga_tester
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 29
-Total pins : 9
+Total registers : 125
+Total pins : 8
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
