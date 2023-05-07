@@ -1,0 +1,19 @@
+library IEEE;
+use  IEEE.STD_LOGIC_1164.all;
+use  IEEE.STD_LOGIC_ARITH.all;
+use  IEEE.STD_LOGIC_UNSIGNED.all;
+
+ENTITY position_gen IS
+	PORT
+	(
+		clk : IN STD_LOGIC;
+		font_row, font_col : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+		character_address : OUT STD_LOGIC_VECTOR(5 DOWNTO 0)
+	);
+END position_gen;
+
+ARCHITECTURE behav OF position_gen IS
+BEGIN
+	PROCESS(clk)
+	BEGIN
+		
