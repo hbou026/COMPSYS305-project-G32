@@ -1,0 +1,106 @@
+E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/vga_sync.vhd {1 {vcom -work work -2002 -explicit {E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\vga_sync.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity VGA_SYNC
+-- Compiling architecture a of VGA_SYNC
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/velocityController.vhd {1 {vcom -work work -2002 -explicit {E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\velocityController.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity velocityController
+-- Compiling architecture behaviour of velocityController
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd {1 {vcom -work work -2002 -explicit E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity char_rom
+-- Compiling architecture SYN of char_rom
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/ball.vhd {1 {vcom -work work -2002 -explicit {E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\ball.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ball
+-- Compiling architecture behavior of ball
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/combine_signals.vhd {1 {vcom -work work -2002 -explicit {E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\combine_signals.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity combine_signals
+-- Compiling architecture behav of combine_signals
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/test_clk_25.vhd {1 {vcom -work work -2002 -explicit E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/test_clk_25.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity test_clk_25
+-- Compiling architecture my_test of test_clk_25
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/clk_25_converter.vhd {1 {vcom -work work -2002 -explicit {E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\clk_25_converter.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity clk_25_converter
+-- Compiling architecture behaviour of clk_25_converter
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/mouse.vhd {1 {vcom -work work -2002 -explicit E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/mouse.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MOUSE
+-- Compiling architecture behavior of MOUSE
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/bouncy_ball.vhd {1 {vcom -work work -2002 -explicit E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/bouncy_ball.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity bouncy_ball
+-- Compiling architecture behavior of bouncy_ball
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/mouse_led.vhd {1 {vcom -work work -2002 -explicit {E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\mouse_led.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mouse_led
+-- Compiling architecture Behavioral of mouse_led
+
+} {} {}} E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/test_mouse.vhd {1 {vcom -work work -2002 -explicit {E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\test_mouse.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity test_mouse
+-- Compiling architecture behaviour of test_mouse
+
+} {} {}}

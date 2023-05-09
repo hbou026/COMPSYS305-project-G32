@@ -1,0 +1,424 @@
+m255
+K3
+13
+cModel Technology
+dE:\COMPSYS305\time_counter
+Eball
+Z0 w1683158773
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dE:\COMPSYS305\305_miniproject\COMPSYS305-project-G32
+Z6 8E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\ball.vhd
+Z7 FE:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\ball.vhd
+l0
+L7
+Vi1^03Y?8O]H@`[nILBCHG0
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1683160392.254000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\ball.vhd|
+Z11 !s107 E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\ball.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 aDMM_OShGooVd9`=d1_ao1
+!i10b 1
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 4 ball 0 22 i1^03Y?8O]H@`[nILBCHG0
+l20
+L14
+V8E`=Q^KUZg[2B>FJZmQkQ2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 H^e34DT3mfSI=7?DlNg253
+!i10b 1
+Ebouncy_ball
+Z14 w1683158773
+Z15 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+R2
+R3
+R4
+R5
+Z16 8E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/bouncy_ball.vhd
+Z17 FE:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/bouncy_ball.vhd
+l0
+L7
+V]]^UeH2LYFJJeaF;kJDU[2
+R8
+32
+Z18 !s108 1683160392.323000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/bouncy_ball.vhd|
+Z20 !s107 E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/bouncy_ball.vhd|
+R12
+R13
+!s100 [el<^Hmo]kJMEO?=M@RL<2
+!i10b 1
+Abehavior
+R15
+R2
+R3
+R4
+DEx4 work 11 bouncy_ball 0 22 ]]^UeH2LYFJJeaF;kJDU[2
+l22
+L14
+Vij17U=60<7:?_h0dF;DRl0
+R8
+32
+R18
+R19
+R20
+R12
+R13
+!s100 ^V0;QME3LH69mhXJcW>No3
+!i10b 1
+Echar_rom
+R14
+R1
+R2
+R3
+R4
+R5
+Z21 8E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd
+Z22 FE:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd
+l0
+L9
+VeB29ZO8zdk_[UQEA5>4[m2
+R8
+32
+Z23 !s108 1683160392.374000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd|
+Z25 !s107 E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd|
+R12
+R13
+!s100 8BTe6g2GzRlieT`CE33Ub1
+!i10b 1
+Asyn
+R1
+R2
+R3
+R4
+DEx4 work 8 char_rom 0 22 eB29ZO8zdk_[UQEA5>4[m2
+l49
+L20
+VUGGH5bONVJ^>?H2Azm[I@2
+R8
+32
+R23
+R24
+R25
+R12
+R13
+!s100 T?kBoHZao@A_Sd@:b0D5d2
+!i10b 1
+Eclk_25_converter
+R14
+Z26 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R3
+R4
+R5
+Z27 8E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\clk_25_converter.vhd
+Z28 FE:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\clk_25_converter.vhd
+l0
+L10
+VY=eZhj`M^QdNe66CBWj720
+R8
+32
+Z29 !s108 1683160392.423000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\clk_25_converter.vhd|
+Z31 !s107 E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\clk_25_converter.vhd|
+R12
+R13
+!s100 CV>k<4zD^g8boeA:9_oJ@3
+!i10b 1
+Abehaviour
+R26
+R3
+R4
+DEx4 work 16 clk_25_converter 0 22 Y=eZhj`M^QdNe66CBWj720
+l18
+L15
+V[k[>O@cf@UZ`7h:Y<HNXZ3
+R8
+32
+R29
+R30
+R31
+R12
+R13
+!s100 ZIJ0K]EXa0elPjka^Io0N1
+!i10b 1
+Ecombine_signals
+Z32 w1683460463
+R1
+R2
+R3
+R4
+R5
+Z33 8E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\combine_signals.vhd
+Z34 FE:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\combine_signals.vhd
+l0
+L6
+VM<0XO@bZVo=Fz8c=N6cXd0
+!s100 lPYLPbV5oi0NPOzYYjJ=E0
+R8
+32
+!i10b 1
+Z35 !s108 1683460463.342000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\combine_signals.vhd|
+Z37 !s107 E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\combine_signals.vhd|
+R12
+R13
+Abehav
+R1
+R2
+R3
+R4
+DEx4 work 15 combine_signals 0 22 M<0XO@bZVo=Fz8c=N6cXd0
+l14
+L13
+VlAzBVQVl;6z0=H;397U2U1
+!s100 5@@9dk4H4429f]]i2I7X22
+R8
+32
+!i10b 1
+R35
+R36
+R37
+R12
+R13
+Emouse
+R14
+R1
+R2
+R3
+R4
+R5
+Z38 8E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/mouse.vhd
+Z39 FE:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/mouse.vhd
+l0
+L9
+VMI14R753K:Z;<O<dzd;i<3
+R8
+32
+Z40 !s108 1683160392.486000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/mouse.vhd|
+Z42 !s107 E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/mouse.vhd|
+R12
+R13
+!s100 ]XHZZI:ABX]SP9GBRlUIc2
+!i10b 1
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 5 mouse 0 22 MI14R753K:Z;<O<dzd;i<3
+l44
+L18
+V=TW^:;NHk[=SW^Jn66OZA3
+R8
+32
+R40
+R41
+R42
+R12
+R13
+!s100 747ZknDDV[UmC2lK^FK<I2
+!i10b 1
+Emouse_led
+R14
+R3
+R4
+R5
+Z43 8E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\mouse_led.vhd
+Z44 FE:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\mouse_led.vhd
+l0
+L8
+V;lbN1=3]`UIeJnmFlWBeR0
+R8
+32
+Z45 !s108 1683160392.534000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\mouse_led.vhd|
+Z47 !s107 E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\mouse_led.vhd|
+R12
+R13
+!s100 [S85eW@JJ0CcV6Re?iJ=70
+!i10b 1
+Abehavioral
+R3
+R4
+DEx4 work 9 mouse_led 0 22 ;lbN1=3]`UIeJnmFlWBeR0
+l19
+L14
+Vf28n6VnQY]1:=I@hi4PB?2
+R8
+32
+R45
+R46
+R47
+R12
+R13
+!s100 Y=UDiSG?YD8HHACzifBXL0
+!i10b 1
+Etest_clk_25
+R14
+R26
+R3
+R4
+R5
+Z48 8E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/test_clk_25.vhd
+Z49 FE:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/test_clk_25.vhd
+l0
+L8
+V7l?e75f8>56;L=c8V[>?D1
+R8
+32
+Z50 !s108 1683160392.597000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/test_clk_25.vhd|
+Z52 !s107 E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/test_clk_25.vhd|
+R12
+R13
+!s100 @aPInRVZ;8JZAG7B8LfM81
+!i10b 1
+Amy_test
+R26
+R3
+R4
+DEx4 work 11 test_clk_25 0 22 7l?e75f8>56;L=c8V[>?D1
+l19
+L11
+V0OTYlc`a>`5C]4feRV26M0
+R8
+32
+R50
+R51
+R52
+R12
+R13
+!s100 CH7WL;`^C8W6;Rf19EL1h2
+!i10b 1
+Etest_mouse
+R14
+R1
+R2
+R3
+R4
+R5
+Z53 8E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\test_mouse.vhd
+Z54 FE:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\test_mouse.vhd
+l0
+L10
+Vj;N5Vf8YX0Uzm]HKW3D[N2
+R8
+32
+Z55 !s108 1683160392.645000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\test_mouse.vhd|
+Z57 !s107 E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\test_mouse.vhd|
+R12
+R13
+!s100 =<i?hIRBnPK>DZCG8[dA90
+!i10b 1
+Abehaviour
+R1
+R2
+R3
+R4
+DEx4 work 10 test_mouse 0 22 j;N5Vf8YX0Uzm]HKW3D[N2
+l50
+L15
+VUaQ>c[hJ4HYUEdE2Io]R]0
+R8
+32
+R55
+R56
+R57
+R12
+R13
+!s100 cCf@MUfCPQaZF48TEo>ST3
+!i10b 1
+Evelocitycontroller
+R14
+R26
+R3
+R4
+R5
+Z58 8E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\velocityController.vhd
+Z59 FE:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\velocityController.vhd
+l0
+L15
+VBLIc_S[HiPZQ8njIaGHL72
+R8
+32
+Z60 !s108 1683160392.693000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\velocityController.vhd|
+Z62 !s107 E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\velocityController.vhd|
+R12
+R13
+!s100 QXRiDVK9dTjVW1b]fRmbF1
+!i10b 1
+Abehaviour
+R26
+R3
+R4
+DEx4 work 18 velocitycontroller 0 22 BLIc_S[HiPZQ8njIaGHL72
+l22
+L21
+VOXjFkBfFgR>Dh;cg1EgaP0
+R8
+32
+R60
+R61
+R62
+R12
+R13
+!s100 nZ]J80dne3G4l0]^5P<Q<3
+!i10b 1
+Evga_sync
+R14
+R1
+R2
+R3
+R4
+R5
+Z63 8E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\vga_sync.vhd
+Z64 FE:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\vga_sync.vhd
+l0
+L7
+VNo71De?^LY>XReNFhT5bE0
+R8
+32
+Z65 !s108 1683160392.756000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\vga_sync.vhd|
+Z67 !s107 E:\COMPSYS305\305_miniproject\COMPSYS305-project-G32\vga_sync.vhd|
+R12
+R13
+!s100 EzPbFIbmV;hg7RF`7Uc]00
+!i10b 1
+Aa
+R1
+R2
+R3
+R4
+DEx4 work 8 vga_sync 0 22 No71De?^LY>XReNFhT5bE0
+l18
+L13
+VY9UGI<f9U3Pm0Q:4OBS;g2
+R8
+32
+R65
+R66
+R67
+R12
+R13
+!s100 QXoa:boXbTi_9N8T36zV42
+!i10b 1
