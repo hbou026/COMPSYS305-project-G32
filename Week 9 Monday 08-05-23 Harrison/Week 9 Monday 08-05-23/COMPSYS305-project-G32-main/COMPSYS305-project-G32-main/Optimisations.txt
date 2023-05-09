@@ -1,0 +1,12 @@
+
+This document contains a list of variables across all files that can be optimised to make the hardware run faster if necessary.
+If the variables are changed to be optimal to minimise the amount of LEs and registers, remove them from this list
+
+
+==================== velocityController.vhd ====================
+vel_out (the output signal; currently an integer)
+v_init (variable used in process; currently an integer)
+velocity (variable used in process; curently an integer)
+
+
+
