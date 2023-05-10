@@ -35,7 +35,7 @@ character_address <= cha_add;
 
         count_col := CONV_INTEGER(pixel_col);
 
-        IF (pixel_row >= CONV_STD_LOGIC_VECTOR(0, 10) AND pixel_row <= CONV_STD_LOGIC_VECTOR(17, 10)) THEN
+        IF (pixel_row >= CONV_STD_LOGIC_VECTOR(0, 10) AND pixel_row <= CONV_STD_LOGIC_VECTOR(19, 10)) THEN
             f_row <= conv_std_logic_vector( conv_integer(pixel_row(3 DOWNTO 1)) + 5, 3);
         ELSE
             f_row <= "111";
