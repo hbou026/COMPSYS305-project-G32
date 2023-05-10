@@ -471,4 +471,6 @@ set_global_assignment -name PARTITION_COLOR 16764057 -entity DE0_CV_Default -sec
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_CV_Default -section_id Top
 set_global_assignment -name VHDL_FILE ../bouncy_ball.vhd
 set_global_assignment -name VHDL_FILE "../Mouse Testing/mouse.vhd"
+set_global_assignment -name VHDL_FILE ../mouse.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VHDL_FILE ../char_rom.vhd

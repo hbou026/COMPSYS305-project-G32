@@ -7,7 +7,8 @@ ENTITY position_gen IS
 	PORT
 	(
 		clk : IN STD_LOGIC;
-		font_row, font_col : INOUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+		pixel_row, pixel_col : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+		font_row, font_col : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 		character_address : OUT STD_LOGIC_VECTOR(5 DOWNTO 0)
 	);
 END position_gen;
@@ -25,18 +26,18 @@ character_address <= cha_add;
 
 	PROCESS(clk)
 	BEGIN
-		if(f_row = "111") THEN
+		IF (pixel_row <= CONV_STD_LOGIC_VECTOR(16, 10)) THEN
+			f_row <= pixel_row(3 DOWNTO 1);
+		ELSE
 			f_row <= "000";
-		ELSE
-			f_row <= f_row + 1;
 		END IF;
 		
-		if(f_col = "111") THEN
+		IF (pixel_col <= CONV_STD_LOGIC_VECTOR(176, 10)) THEN
+			f_col <= pixel_col(3 DOWNTO 1);
+		ELSE
 			f_col <= "000";
-		ELSE
-			f_col <= f_col + 1;
 		END IF;
 		
-		cha_add <= CONV_STD_LOGIC_VECTOR(0, 6);
+		cha_add <= CONV_STD_LOGIC_VECTOR(1, 6);
 	END PROCESS;
 END behav;

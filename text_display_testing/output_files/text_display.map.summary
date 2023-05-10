@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun May 07 23:17:18 2023
+Analysis & Synthesis Status : Successful - Mon May 08 12:57:03 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : text_display
 Top-level Entity Name : text_display_testing
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 39
+Total registers : 45
 Total pins : 6
 Total virtual pins : 0
-Total block memory bits : 2,048
+Total block memory bits : 64
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
