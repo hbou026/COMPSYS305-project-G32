@@ -26,7 +26,7 @@ font_row <= f_row;
 font_col <= f_col;
 character_address <= cha_add;
 
-	PROCESS(clk)
+	PROCESS(clk, pixel_row, pixel_col)
 	
 	VARIABLE count : INTEGER := 0;
 	

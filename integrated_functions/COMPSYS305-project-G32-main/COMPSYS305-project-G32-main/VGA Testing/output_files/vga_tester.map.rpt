@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_tester
-Wed May 10 19:53:34 2023
+Wed May 10 20:14:52 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 10 19:53:34 2023       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 10 20:14:52 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; vga_tester                                  ;
 ; Top-level Entity Name           ; text_pos_gen                                ;
@@ -306,7 +306,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed May 10 19:53:27 2023
+    Info: Processing started: Wed May 10 20:14:45 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_tester -c vga_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
@@ -337,11 +337,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file /compsy
 Info (12021): Found 2 design units, including 1 entities, in source file text_pos_gen.vhd
     Info (12022): Found design unit 1: text_pos_gen-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 16
     Info (12023): Found entity 1: text_pos_gen File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file rgb_process.vhd
+    Info (12022): Found design unit 1: rgb_process-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/rgb_process.vhd Line: 14
+    Info (12023): Found entity 1: rgb_process File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/rgb_process.vhd Line: 6
 Info (12127): Elaborating entity "text_pos_gen" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(34): signal "pixel_row" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 34
-Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(35): signal "pixel_row" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 35
-Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(40): signal "pixel_col" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(41): signal "pixel_col" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 41
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 230 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50 -entity DE0_CV_Default was ignored
@@ -587,10 +586,10 @@ Info (21057): Implemented 87 device resources after synthesis - the final resour
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 12 output pins
     Info (21061): Implemented 54 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 248 warnings
-    Info: Peak virtual memory: 4862 megabytes
-    Info: Processing ended: Wed May 10 19:53:34 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 244 warnings
+    Info: Peak virtual memory: 4861 megabytes
+    Info: Processing ended: Wed May 10 20:14:52 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 
