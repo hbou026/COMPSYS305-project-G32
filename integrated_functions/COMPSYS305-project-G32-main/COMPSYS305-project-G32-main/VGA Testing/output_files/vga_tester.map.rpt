@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_tester
-Thu May 11 00:05:45 2023
+Thu May 11 00:21:19 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -52,7 +52,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 11 00:05:45 2023       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 11 00:21:19 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; vga_tester                                  ;
 ; Top-level Entity Name           ; vga_tester                                  ;
@@ -164,46 +164,46 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 14          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-14        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                                           ; Library  ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
-; ../vga_sync.vhd                  ; yes             ; User VHDL File                     ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd                         ;          ;
-; vga_tester.bdf                   ; yes             ; User Block Diagram/Schematic File  ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/vga_tester.bdf           ;          ;
-; pll25Mhz.vhd                     ; yes             ; User Wizard-Generated File         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd             ; pll25Mhz ;
-; pll25Mhz/pll25Mhz_0002.v         ; yes             ; User Verilog HDL File              ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v ; pll25Mhz ;
-; ../bouncy_ball.vhd               ; yes             ; User VHDL File                     ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd                      ;          ;
-; ../mouse.vhd                     ; yes             ; User VHDL File                     ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd                            ;          ;
-; ../../../../char_rom.vhd         ; yes             ; User VHDL File                     ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd                                                                                                      ;          ;
-; text_pos_gen.vhd                 ; yes             ; User VHDL File                     ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd         ;          ;
-; clk_conv_1hz.vhd                 ; yes             ; User VHDL File                     ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/clk_conv_1hz.vhd         ;          ;
-; click_counter.vhd                ; yes             ; User VHDL File                     ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/click_counter.vhd        ;          ;
-; BCD_to_7Seg.vhd                  ; yes             ; User VHDL File                     ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd          ;          ;
-; altera_pll.v                     ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altera_pll.v                                                                                                   ;          ;
-; altsyncram.tdf                   ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                 ;          ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                          ;          ;
-; lpm_mux.inc                      ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                    ;          ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                 ;          ;
-; aglobal181.inc                   ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/aglobal181.inc                                                                                                 ;          ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                  ;          ;
-; altrom.inc                       ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altrom.inc                                                                                                     ;          ;
-; altram.inc                       ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altram.inc                                                                                                     ;          ;
-; altdpram.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altdpram.inc                                                                                                   ;          ;
-; db/altsyncram_d5g1.tdf           ; yes             ; Auto-Generated Megafunction        ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/db/altsyncram_d5g1.tdf   ;          ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                                             ; Library  ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
+; ../vga_sync.vhd                  ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd                         ;          ;
+; vga_tester.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/vga_tester.bdf           ;          ;
+; pll25Mhz.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd             ; pll25Mhz ;
+; pll25Mhz/pll25Mhz_0002.v         ; yes             ; User Verilog HDL File              ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v ; pll25Mhz ;
+; ../bouncy_ball.vhd               ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd                      ;          ;
+; ../mouse.vhd                     ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd                            ;          ;
+; ../../../../char_rom.vhd         ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/char_rom.vhd                                                                                                      ;          ;
+; text_pos_gen.vhd                 ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd         ;          ;
+; clk_conv_1hz.vhd                 ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/clk_conv_1hz.vhd         ;          ;
+; click_counter.vhd                ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/click_counter.vhd        ;          ;
+; BCD_to_7Seg.vhd                  ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd          ;          ;
+; altera_pll.v                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                                                                                                      ;          ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                    ;          ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                             ;          ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                       ;          ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                    ;          ;
+; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                                                                    ;          ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                     ;          ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                                                                        ;          ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                                                                        ;          ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                                                                      ;          ;
+; db/altsyncram_d5g1.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/db/altsyncram_d5g1.tdf   ;          ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
@@ -748,57 +748,57 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 11 00:05:38 2023
+    Info: Processing started: Thu May 11 00:21:03 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_tester -c vga_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/vga_sync.vhd
-    Info (12022): Found design unit 1: VGA_SYNC-a File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd Line: 13
-    Info (12023): Found entity 1: VGA_SYNC File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd Line: 7
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/harri/documents/github/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/vga_sync.vhd
+    Info (12022): Found design unit 1: VGA_SYNC-a File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd Line: 13
+    Info (12023): Found entity 1: VGA_SYNC File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file vga_tester.bdf
     Info (12023): Found entity 1: vga_tester
 Info (12021): Found 2 design units, including 1 entities, in source file pll25mhz.vhd
-    Info (12022): Found design unit 1: pll25Mhz-rtl File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 20
-    Info (12023): Found entity 1: pll25Mhz File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 11
+    Info (12022): Found design unit 1: pll25Mhz-rtl File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 20
+    Info (12023): Found entity 1: pll25Mhz File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file pll25mhz/pll25mhz_0002.v
-    Info (12023): Found entity 1: pll25Mhz_0002 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 2
-Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/bouncy_ball.vhd
-    Info (12022): Found design unit 1: bouncy_ball-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd Line: 14
-    Info (12023): Found entity 1: bouncy_ball File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd Line: 7
+    Info (12023): Found entity 1: pll25Mhz_0002 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 2
+Info (12021): Found 2 design units, including 1 entities, in source file /users/harri/documents/github/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/bouncy_ball.vhd
+    Info (12022): Found design unit 1: bouncy_ball-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd Line: 14
+    Info (12023): Found entity 1: bouncy_ball File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd Line: 7
 Warning (12019): Can't analyze file -- file ../Mouse Testing/mouse.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/mouse.vhd
-    Info (12022): Found design unit 1: MOUSE-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 18
-    Info (12023): Found entity 1: MOUSE File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /users/harri/documents/github/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/mouse.vhd
+    Info (12022): Found design unit 1: MOUSE-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 18
+    Info (12023): Found entity 1: MOUSE File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 9
 Warning (12019): Can't analyze file -- file ../../../../../lab2/Weekend Files/BCD_2digit_counter.vhd is missing
-Warning (12019): Can't analyze file -- file C:/Users/hbou026/Downloads/BCD_to_7Seg.vhd is missing
+Warning (12019): Can't analyze file -- file ../../../../../../../../hbou026/Downloads/BCD_to_7Seg.vhd is missing
 Warning (12019): Can't analyze file -- file ../../../../../lab3/clk_converter.vhd is missing
 Warning (12019): Can't analyze file -- file ../../../../../lab2/Weekend Files/BCD_counter.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/char_rom.vhd
-    Info (12022): Found design unit 1: char_rom-SYN File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd Line: 20
-    Info (12023): Found entity 1: char_rom File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /users/harri/documents/github/compsys305-project-g32/char_rom.vhd
+    Info (12022): Found design unit 1: char_rom-SYN File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/char_rom.vhd Line: 20
+    Info (12023): Found entity 1: char_rom File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/char_rom.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file text_pos_gen.vhd
-    Info (12022): Found design unit 1: text_pos_gen-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 16
-    Info (12023): Found entity 1: text_pos_gen File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 6
+    Info (12022): Found design unit 1: text_pos_gen-behav File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 16
+    Info (12023): Found entity 1: text_pos_gen File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file rgb_process.vhd
-    Info (12022): Found design unit 1: rgb_process-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/rgb_process.vhd Line: 14
-    Info (12023): Found entity 1: rgb_process File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/rgb_process.vhd Line: 6
+    Info (12022): Found design unit 1: rgb_process-behav File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/rgb_process.vhd Line: 14
+    Info (12023): Found entity 1: rgb_process File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/rgb_process.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file clk_conv_1hz.vhd
-    Info (12022): Found design unit 1: clk_conv_1hz-behaviour File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/clk_conv_1hz.vhd Line: 14
-    Info (12023): Found entity 1: clk_conv_1hz File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/clk_conv_1hz.vhd Line: 9
+    Info (12022): Found design unit 1: clk_conv_1hz-behaviour File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/clk_conv_1hz.vhd Line: 14
+    Info (12023): Found entity 1: clk_conv_1hz File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/clk_conv_1hz.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file click_counter.vhd
-    Info (12022): Found design unit 1: click_counter-behaviour File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/click_counter.vhd Line: 13
-    Info (12023): Found entity 1: click_counter File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/click_counter.vhd Line: 8
+    Info (12022): Found design unit 1: click_counter-behaviour File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/click_counter.vhd Line: 13
+    Info (12023): Found entity 1: click_counter File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/click_counter.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_to_7seg.vhd
-    Info (12022): Found design unit 1: BCD_to_SevenSeg-arc1 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd Line: 12
-    Info (12023): Found entity 1: BCD_to_SevenSeg File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd Line: 7
+    Info (12022): Found design unit 1: BCD_to_SevenSeg-arc1 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd Line: 12
+    Info (12023): Found entity 1: BCD_to_SevenSeg File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd Line: 7
 Info (12127): Elaborating entity "vga_tester" for the top level hierarchy
 Info (12128): Elaborating entity "VGA_SYNC" for hierarchy "VGA_SYNC:inst"
 Info (12128): Elaborating entity "pll25Mhz" for hierarchy "pll25Mhz:inst1"
-Info (12128): Elaborating entity "pll25Mhz_0002" for hierarchy "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 32
-Info (12128): Elaborating entity "altera_pll" for hierarchy "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 85
+Info (12128): Elaborating entity "pll25Mhz_0002" for hierarchy "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 32
+Info (12128): Elaborating entity "altera_pll" for hierarchy "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 85
-Info (12133): Instantiated megafunction "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" with the following parameter: File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 85
+Info (12133): Instantiated megafunction "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -861,15 +861,15 @@ Info (12133): Instantiated megafunction "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_i
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "bouncy_ball" for hierarchy "bouncy_ball:inst3"
 Info (12128): Elaborating entity "MOUSE" for hierarchy "MOUSE:inst4"
-Warning (10036): Verilog HDL or VHDL warning at mouse.vhd(25): object "CHARIN" assigned a value but never read File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 25
-Warning (10492): VHDL Process Statement warning at mouse.vhd(151): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 151
-Warning (10492): VHDL Process Statement warning at mouse.vhd(155): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 155
-Warning (10492): VHDL Process Statement warning at mouse.vhd(156): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 156
-Warning (10492): VHDL Process Statement warning at mouse.vhd(157): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 157
+Warning (10036): Verilog HDL or VHDL warning at mouse.vhd(25): object "CHARIN" assigned a value but never read File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at mouse.vhd(151): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 151
+Warning (10492): VHDL Process Statement warning at mouse.vhd(155): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 155
+Warning (10492): VHDL Process Statement warning at mouse.vhd(156): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 156
+Warning (10492): VHDL Process Statement warning at mouse.vhd(157): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 157
 Info (12128): Elaborating entity "char_rom" for hierarchy "char_rom:inst6"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "char_rom:inst6|altsyncram:altsyncram_component" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd Line: 51
-Info (12130): Elaborated megafunction instantiation "char_rom:inst6|altsyncram:altsyncram_component" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd Line: 51
-Info (12133): Instantiated megafunction "char_rom:inst6|altsyncram:altsyncram_component" with the following parameter: File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd Line: 51
+Info (12128): Elaborating entity "altsyncram" for hierarchy "char_rom:inst6|altsyncram:altsyncram_component" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/char_rom.vhd Line: 51
+Info (12130): Elaborated megafunction instantiation "char_rom:inst6|altsyncram:altsyncram_component" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/char_rom.vhd Line: 51
+Info (12133): Instantiated megafunction "char_rom:inst6|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/char_rom.vhd Line: 51
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -885,49 +885,49 @@ Info (12133): Instantiated megafunction "char_rom:inst6|altsyncram:altsyncram_co
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_d5g1.tdf
-    Info (12023): Found entity 1: altsyncram_d5g1 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/db/altsyncram_d5g1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_d5g1" for hierarchy "char_rom:inst6|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated" File: d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+    Info (12023): Found entity 1: altsyncram_d5g1 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/db/altsyncram_d5g1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_d5g1" for hierarchy "char_rom:inst6|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "text_pos_gen" for hierarchy "text_pos_gen:inst7"
-Info (10041): Inferred latch for "count_col[0]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[1]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[2]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[3]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[4]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[5]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[6]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[7]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[8]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[9]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[10]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[11]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[12]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[13]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[14]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[15]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[16]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[17]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[18]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[19]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[20]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[21]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[22]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[23]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[24]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[25]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[26]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[27]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[28]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[29]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[30]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
-Info (10041): Inferred latch for "count_col[31]" at text_pos_gen.vhd(47) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[0]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[1]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[2]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[3]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[4]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[5]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[6]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[7]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[8]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[9]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[10]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[11]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[12]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[13]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[14]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[15]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[16]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[17]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[18]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[19]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[20]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[21]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[22]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[23]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[24]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[25]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[26]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[27]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[28]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[29]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[30]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
+Info (10041): Inferred latch for "count_col[31]" at text_pos_gen.vhd(47) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 47
 Info (12128): Elaborating entity "BCD_to_SevenSeg" for hierarchy "BCD_to_SevenSeg:7seg0"
 Info (12128): Elaborating entity "click_counter" for hierarchy "click_counter:inst12"
 Info (12128): Elaborating entity "clk_conv_1hz" for hierarchy "clk_conv_1hz:inst10"
-Warning (10492): VHDL Process Statement warning at clk_conv_1hz.vhd(29): signal "v_clk_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/clk_conv_1hz.vhd Line: 29
-Info (13000): Registers with preset signals will power-up high File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 146
+Warning (10492): VHDL Process Statement warning at clk_conv_1hz.vhd(29): signal "v_clk_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/clk_conv_1hz.vhd Line: 29
+Info (13000): Registers with preset signals will power-up high File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 146
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 6 MSB VCC or GND address nodes from RAM block "char_rom:inst6|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/db/altsyncram_d5g1.tdf Line: 31
+Info (17036): Removed 6 MSB VCC or GND address nodes from RAM block "char_rom:inst6|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/db/altsyncram_d5g1.tdf Line: 31
 Warning (20013): Ignored 230 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50 -entity DE0_CV_Default was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK3_50 -entity DE0_CV_Default was ignored
@@ -1161,7 +1161,7 @@ Warning (20013): Ignored 230 assignments for entity "DE0_CV_Default" -- entity d
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV_Default -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning: RST port on the PLL is not properly connected on instance pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
+Warning: RST port on the PLL is not properly connected on instance pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
 Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
@@ -1171,9 +1171,9 @@ Info (21057): Implemented 306 device resources after synthesis - the final resou
     Info (21064): Implemented 8 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 244 warnings
-    Info: Peak virtual memory: 4917 megabytes
-    Info: Processing ended: Thu May 11 00:05:45 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4870 megabytes
+    Info: Processing ended: Thu May 11 00:21:19 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:32
 
 

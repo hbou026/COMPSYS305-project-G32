@@ -1,5 +1,5 @@
 Flow report for vga_tester
-Thu May 11 00:06:13 2023
+Thu May 11 00:22:14 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu May 11 00:06:09 2023       ;
+; Flow Status                     ; Successful - Thu May 11 00:22:05 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; vga_tester                                  ;
 ; Top-level Entity Name           ; vga_tester                                  ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/11/2023 00:05:38 ;
+; Start date & time ; 05/11/2023 00:21:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vga_tester          ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 171720526881870.168372033816212        ; --            ; --             ; --         ;
+; COMPILER_SIGNATURE_ID               ; 18587656210645.168372126309808         ; --            ; --             ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --             ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --             ; --         ;
 ; MISC_FILE                           ; pll25Mhz.cmp                           ; --            ; --             ; --         ;
@@ -102,11 +102,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4917 MB             ; 00:00:05                           ;
-; Fitter               ; 00:00:20     ; 1.1                     ; 7371 MB             ; 00:00:24                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4818 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.4                     ; 5241 MB             ; 00:00:03                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4870 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:38     ; 1.0                     ; 5998 MB             ; 00:00:48                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4814 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.1                     ; 5091 MB             ; 00:00:08                           ;
+; Total                ; 00:01:07     ; --                      ; --                  ; 00:01:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,10 +115,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; RuizheWang       ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; RuizheWang       ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; RuizheWang       ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; RuizheWang       ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Michelle-LT1     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Michelle-LT1     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Michelle-LT1     ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Michelle-LT1     ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
