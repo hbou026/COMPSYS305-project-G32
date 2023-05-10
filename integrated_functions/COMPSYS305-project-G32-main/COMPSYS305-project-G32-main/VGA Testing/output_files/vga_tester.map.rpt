@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_tester
-Tue May 09 21:54:36 2023
+Wed May 10 19:53:34 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 09 21:54:36 2023       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 10 19:53:34 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; vga_tester                                  ;
 ; Top-level Entity Name           ; text_pos_gen                                ;
@@ -166,13 +166,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; text_pos_gen.vhd                 ; yes             ; User VHDL File  ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                          ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                                   ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; text_pos_gen.vhd                 ; yes             ; User VHDL File  ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -306,27 +306,27 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 09 21:54:30 2023
+    Info: Processing started: Wed May 10 19:53:27 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_tester -c vga_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/week 9 monday 08-05-23/compsys305-project-g32-main/compsys305-project-g32-main/vga_sync.vhd
-    Info (12022): Found design unit 1: VGA_SYNC-a File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd Line: 13
-    Info (12023): Found entity 1: VGA_SYNC File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/vga_sync.vhd
+    Info (12022): Found design unit 1: VGA_SYNC-a File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd Line: 13
+    Info (12023): Found entity 1: VGA_SYNC File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/vga_sync.vhd Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file vga_tester.bdf
     Info (12023): Found entity 1: vga_tester
 Info (12021): Found 2 design units, including 1 entities, in source file pll25mhz.vhd
-    Info (12022): Found design unit 1: pll25Mhz-rtl File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 20
-    Info (12023): Found entity 1: pll25Mhz File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 11
+    Info (12022): Found design unit 1: pll25Mhz-rtl File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 20
+    Info (12023): Found entity 1: pll25Mhz File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file pll25mhz/pll25mhz_0002.v
-    Info (12023): Found entity 1: pll25Mhz_0002 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 2
-Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/week 9 monday 08-05-23/compsys305-project-g32-main/compsys305-project-g32-main/bouncy_ball.vhd
-    Info (12022): Found design unit 1: bouncy_ball-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd Line: 14
-    Info (12023): Found entity 1: bouncy_ball File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd Line: 7
+    Info (12023): Found entity 1: pll25Mhz_0002 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz/pll25Mhz_0002.v Line: 2
+Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/bouncy_ball.vhd
+    Info (12022): Found design unit 1: bouncy_ball-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd Line: 14
+    Info (12023): Found entity 1: bouncy_ball File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/bouncy_ball.vhd Line: 7
 Warning (12019): Can't analyze file -- file ../Mouse Testing/mouse.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/week 9 monday 08-05-23/compsys305-project-g32-main/compsys305-project-g32-main/mouse.vhd
-    Info (12022): Found design unit 1: MOUSE-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 18
-    Info (12023): Found entity 1: MOUSE File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /compsys305/305_miniproject/compsys305-project-g32/integrated_functions/compsys305-project-g32-main/compsys305-project-g32-main/mouse.vhd
+    Info (12022): Found design unit 1: MOUSE-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 18
+    Info (12023): Found entity 1: MOUSE File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 9
 Warning (12019): Can't analyze file -- file ../../../../../lab2/Weekend Files/BCD_2digit_counter.vhd is missing
 Warning (12019): Can't analyze file -- file C:/Users/hbou026/Downloads/BCD_to_7Seg.vhd is missing
 Warning (12019): Can't analyze file -- file ../../../../../lab3/clk_converter.vhd is missing
@@ -335,13 +335,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file /compsy
     Info (12022): Found design unit 1: char_rom-SYN File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd Line: 20
     Info (12023): Found entity 1: char_rom File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/char_rom.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file text_pos_gen.vhd
-    Info (12022): Found design unit 1: text_pos_gen-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 16
-    Info (12023): Found entity 1: text_pos_gen File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 6
+    Info (12022): Found design unit 1: text_pos_gen-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 16
+    Info (12023): Found entity 1: text_pos_gen File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 6
 Info (12127): Elaborating entity "text_pos_gen" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(34): signal "pixel_row" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 34
-Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(35): signal "pixel_row" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 35
-Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(40): signal "pixel_col" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(41): signal "pixel_col" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(34): signal "pixel_row" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(35): signal "pixel_row" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(40): signal "pixel_col" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at text_pos_gen.vhd(41): signal "pixel_col" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 41
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 230 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK2_50 -entity DE0_CV_Default was ignored
@@ -582,15 +582,15 @@ Warning (20013): Ignored 317 assignments for entity "pll25Mhz_0002" -- entity do
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Week 9 Monday 08-05-23/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 9
+    Warning (15610): No output dependent on input pin "clk" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd Line: 9
 Info (21057): Implemented 87 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 21 input pins
     Info (21059): Implemented 12 output pins
     Info (21061): Implemented 54 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 248 warnings
-    Info: Peak virtual memory: 4863 megabytes
-    Info: Processing ended: Tue May 09 21:54:36 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Wed May 10 19:53:34 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
 
 

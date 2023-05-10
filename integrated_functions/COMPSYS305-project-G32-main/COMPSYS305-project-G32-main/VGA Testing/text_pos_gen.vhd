@@ -18,7 +18,7 @@ ARCHITECTURE behav OF text_pos_gen IS
 SIGNAL f_row, f_col: STD_LOGIC_VECTOR(2 DOWNTO 0) := "000";
 SIGNAL cha_add: STD_LOGIC_VECTOR(5 DOWNTO 0);
 TYPE sentence IS ARRAY(0 TO 11) OF INTEGER;
-SIGNAL my_sentence : sentence := (2, 17, 25, 16, 3, 31, 40, 2, 1, 14, 14, 41);
+SIGNAL my_sentence : sentence := (2, 15, 21, 14, 3, 25, 32, 2, 1, 12, 12, 33);
 
 BEGIN
 
