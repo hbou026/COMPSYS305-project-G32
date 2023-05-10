@@ -32,38 +32,35 @@ character_address <= cha_add;
     VARIABLE count_col : INTEGER := 0;
 
     BEGIN
+
+        count_col := CONV_INTEGER(pixel_col);
+
         IF (pixel_row >= CONV_STD_LOGIC_VECTOR(0, 10) AND pixel_row <= CONV_STD_LOGIC_VECTOR(17, 10)) THEN
             f_row <= conv_std_logic_vector( conv_integer(pixel_row(3 DOWNTO 1)) + 5, 3);
         ELSE
             f_row <= "111";
         END IF;
 
-        IF (pixel_col <= CONV_STD_LOGIC_VECTOR(191, 10)) THEN
+        IF (pixel_col <= CONV_STD_LOGIC_VECTOR(192, 10)) THEN
             f_col <= pixel_col(3 DOWNTO 1);
         ELSE
             f_col <= "000";
         END IF;
-
-        IF (count_col > 191) THEN
-            count_col := 0;
-        END IF;
 CASE count_col IS
-   WHEN 0 TO 15 => count := 2;
-   WHEN 16 TO 31 => count := 15;
-   WHEN 32 TO 47 => count := 21;
-   WHEN 48 TO 63 => count := 14;
-   WHEN 64 TO 79 => count := 3;
-   WHEN 80 TO 95 => count := 25;
-   WHEN 96 TO 111 => count := 32;
-   WHEN 112 TO 127 => count := 2;
-   WHEN 128 TO 143 => count := 1;
-   WHEN 144 TO 175 => count := 12;
-   WHEN 176 TO 191 => count := 33;
-   WHEN OTHERS => count := 32;
-  END CASE;
+            WHEN 0 TO 15 => count := 2;
+            WHEN 16 TO 31 => count := 15;
+            WHEN 32 TO 47 => count := 21;
+            WHEN 48 TO 63 => count := 14;
+            WHEN 64 TO 79 => count := 3;
+            WHEN 80 TO 95 => count := 25;
+            WHEN 96 TO 111 => count := 32;
+            WHEN 112 TO 127 => count := 2;
+            WHEN 128 TO 143 => count := 1;
+            WHEN 144 TO 175 => count := 12;
+            WHEN 176 TO 191 => count := 33;
+            WHEN OTHERS => count := 32;
+        END CASE;
 
-  count_col := count_col + 1;
-
-  cha_add <= CONV_STD_LOGIC_VECTOR(count, 6);
- END PROCESS;
+        cha_add <= CONV_STD_LOGIC_VECTOR(count, 6);
+    END PROCESS;
 END behav;

@@ -894,28 +894,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 200 -144 352 -64)
-	(text "clk_conv_1hz" (rect 5 0 72 12)(font "Arial" ))
-	(text "inst10" (rect 8 64 36 81)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk_in" (rect 0 0 28 12)(font "Arial" ))
-		(text "clk_in" (rect 21 27 49 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 152 32)
-		(output)
-		(text "clk_out" (rect 0 0 35 12)(font "Arial" ))
-		(text "clk_out" (rect 102 27 137 39)(font "Arial" ))
-		(line (pt 152 32)(pt 136 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 136 64))
-	)
-)
-(symbol
 	(rect 536 -144 704 -32)
 	(text "click_counter" (rect 5 0 69 12)(font "Arial" ))
 	(text "inst12" (rect 8 96 36 113)(font "Intel Clear" ))
@@ -1129,22 +1107,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -64 288)
 	(pt 128 288)
-)
-(connector
-	(pt 80 112)
-	(pt 80 -112)
-)
-(connector
-	(pt 8 112)
-	(pt 80 112)
-)
-(connector
-	(pt 80 112)
-	(pt 128 112)
-)
-(connector
-	(pt 80 -112)
-	(pt 200 -112)
 )
 (connector
 	(text "7seg[3..0]" (rect 914 -8 960 9)(font "Intel Clear" ))
@@ -1384,10 +1346,6 @@ refer to the applicable agreement for further details.
 	(pt 536 -64)
 )
 (connector
-	(pt 536 -112)
-	(pt 352 -112)
-)
-(connector
 	(pt 488 64)
 	(pt 432 64)
 )
@@ -1440,11 +1398,19 @@ refer to the applicable agreement for further details.
 	(pt 904 8)
 	(bus)
 )
+(connector
+	(pt 8 112)
+	(pt 128 112)
+)
+(connector
+	(text "clk" (rect 362 -128 376 -111)(font "Intel Clear" ))
+	(pt 536 -112)
+	(pt 352 -112)
+)
 (junction (pt 360 112))
 (junction (pt 856 272))
 (junction (pt -80 232))
 (junction (pt -64 288))
-(junction (pt 80 112))
 (junction (pt 104 312))
 (junction (pt 408 112))
 (junction (pt 704 448))
