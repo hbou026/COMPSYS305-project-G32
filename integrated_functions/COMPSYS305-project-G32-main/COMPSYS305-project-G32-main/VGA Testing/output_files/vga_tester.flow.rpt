@@ -1,5 +1,5 @@
 Flow report for vga_tester
-Wed May 10 20:15:14 2023
+Wed May 10 23:12:15 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,24 +40,24 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed May 10 20:15:10 2023       ;
+; Flow Status                     ; Successful - Wed May 10 23:12:06 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; vga_tester                                  ;
-; Top-level Entity Name           ; text_pos_gen                                ;
+; Top-level Entity Name           ; vga_tester                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 32 / 18,480 ( < 1 % )                       ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 33 / 224 ( 15 % )                           ;
+; Logic utilization (in ALMs)     ; 156 / 18,480 ( < 1 % )                      ;
+; Total registers                 ; 208                                         ;
+; Total pins                      ; 19 / 224 ( 8 % )                            ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
+; Total block memory bits         ; 4,096 / 3,153,920 ( < 1 % )                 ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                              ;
 ; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
 +---------------------------------+---------------------------------------------+
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/10/2023 20:14:45 ;
+; Start date & time ; 05/10/2023 23:11:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vga_tester          ;
 +-------------------+---------------------+
@@ -78,23 +78,22 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 171720526881870.168370648520716        ; --            ; --             ; --         ;
+; COMPILER_SIGNATURE_ID               ; 18587656210645.168371706008512         ; --            ; --             ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --             ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --             ; --         ;
 ; MISC_FILE                           ; pll25Mhz.cmp                           ; --            ; --             ; --         ;
 ; MISC_FILE                           ; pll25Mhz_sim/pll25Mhz.vho              ; --            ; --             ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE0_CV_Default ; Top        ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; text_pos_gen   ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --             ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE0_CV_Default ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; text_pos_gen   ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --             ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DE0_CV_Default ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; text_pos_gen   ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --             ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --             ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --             ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --             ; --         ;
 ; SPD_FILE                            ; pll25Mhz.spd                           ; --            ; --             ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                     ; --            ; --             ; --         ;
-; TOP_LEVEL_ENTITY                    ; text_pos_gen                           ; vga_tester    ; --             ; --         ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 
 
@@ -103,11 +102,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4861 MB             ; 00:00:05                           ;
-; Fitter               ; 00:00:15     ; 1.0                     ; 7228 MB             ; 00:00:20                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4814 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 5175 MB             ; 00:00:02                           ;
-; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:29                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4865 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:41     ; 1.0                     ; 6062 MB             ; 00:00:49                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4812 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.1                     ; 5092 MB             ; 00:00:08                           ;
+; Total                ; 00:01:09     ; --                      ; --                  ; 00:01:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,10 +115,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; RuizheWang       ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; RuizheWang       ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; RuizheWang       ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; RuizheWang       ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Michelle-LT1     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Michelle-LT1     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Michelle-LT1     ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Michelle-LT1     ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
