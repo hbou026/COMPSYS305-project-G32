@@ -43,12 +43,17 @@ begin
 	if (rising_edge(vert_sync)) then			
 		-- Bounce off top or bottom of the screen
 		if ( ('0' & ball_x_pos >= CONV_STD_LOGIC_VECTOR(639,11) - size) ) then
-			ball_x_motion <= - CONV_STD_LOGIC_VECTOR(2,10);
+			ball_x_motion <= - CONV_STD_LOGIC_VECTOR(4,10);
 		elsif (ball_x_pos <= size) then 
-			ball_x_motion <= CONV_STD_LOGIC_VECTOR(2,10);
+			--ball_x_motion <= CONV_STD_LOGIC_VECTOR(2,10);
 		end if;
 		-- Compute next ball Y position
-		ball_x_pos <= ball_x_pos + ball_x_motion;
+		if (ball_x_pos <= (size - 26)) then
+			ball_x_pos <= ball_x_pos + CONV_STD_LOGIC_VECTOR(639,11);
+		else
+			ball_x_pos <= ball_x_pos + ball_x_motion;
+		end if;
+		
 	end if;
 end process Move_Ball;
 
