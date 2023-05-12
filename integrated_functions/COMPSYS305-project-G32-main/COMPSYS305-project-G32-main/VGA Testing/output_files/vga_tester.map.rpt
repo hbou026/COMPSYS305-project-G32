@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vga_tester
-Thu May 11 00:41:46 2023
+Fri May 12 22:48:17 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -52,14 +52,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 11 00:41:46 2023       ;
+; Analysis & Synthesis Status     ; Successful - Fri May 12 22:48:17 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; vga_tester                                  ;
 ; Top-level Entity Name           ; vga_tester                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 142                                         ;
-; Total pins                      ; 19                                          ;
+; Total pins                      ; 23                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 4,096                                       ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -191,6 +191,7 @@ refer to the applicable agreement for further details.
 ; text_pos_gen.vhd                 ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/text_pos_gen.vhd         ;          ;
 ; click_counter.vhd                ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/click_counter.vhd        ;          ;
 ; BCD_to_7Seg.vhd                  ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd          ;          ;
+; pipes.vhd                        ; yes             ; User VHDL File                     ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pipes.vhd                ;          ;
 ; altera_pll.v                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                                                                                                      ;          ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                    ;          ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                             ;          ;
@@ -221,7 +222,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                                                   ;
 ; Dedicated logic registers                   ; 142                                                                               ;
 ;                                             ;                                                                                   ;
-; I/O pins                                    ; 19                                                                                ;
+; I/O pins                                    ; 23                                                                                ;
 ; Total MLAB memory bits                      ; 0                                                                                 ;
 ; Total block memory bits                     ; 4096                                                                              ;
 ;                                             ;                                                                                   ;
@@ -232,8 +233,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 90                                                                                ;
-; Total fan-out                               ; 1250                                                                              ;
-; Average fan-out                             ; 3.26                                                                              ;
+; Total fan-out                               ; 1254                                                                              ;
+; Average fan-out                             ; 3.20                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -242,7 +243,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------+-----------------+--------------+
-; |vga_tester                               ; 193 (0)             ; 142 (0)                   ; 4096              ; 0          ; 19   ; 0            ; |vga_tester                                                                               ; vga_tester      ; work         ;
+; |vga_tester                               ; 193 (0)             ; 142 (0)                   ; 4096              ; 0          ; 23   ; 0            ; |vga_tester                                                                               ; vga_tester      ; work         ;
 ;    |BCD_to_SevenSeg:7seg0|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|BCD_to_SevenSeg:7seg0                                                         ; BCD_to_SevenSeg ; work         ;
 ;    |MOUSE:inst4|                          ; 47 (47)             ; 65 (65)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|MOUSE:inst4                                                                   ; MOUSE           ; work         ;
 ;    |VGA_SYNC:inst|                        ; 41 (41)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |vga_tester|VGA_SYNC:inst                                                                 ; VGA_SYNC        ; work         ;
@@ -722,7 +723,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 38                          ;
 ;         5 data inputs ; 39                          ;
 ;         6 data inputs ; 28                          ;
-; boundary_port         ; 19                          ;
+; boundary_port         ; 23                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
@@ -746,7 +747,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 11 00:41:30 2023
+    Info: Processing started: Fri May 12 22:47:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_tester -c vga_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -789,7 +790,21 @@ Info (12021): Found 2 design units, including 1 entities, in source file click_c
 Info (12021): Found 2 design units, including 1 entities, in source file bcd_to_7seg.vhd
     Info (12022): Found design unit 1: BCD_to_SevenSeg-arc1 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd Line: 12
     Info (12023): Found entity 1: BCD_to_SevenSeg File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/BCD_to_7Seg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file pipes.vhd
+    Info (12022): Found design unit 1: pipes-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pipes.vhd Line: 15
+    Info (12023): Found entity 1: pipes File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pipes.vhd Line: 7
 Info (12127): Elaborating entity "vga_tester" for the top level hierarchy
+Warning (275089): Not all bits in bus "SW[9..0]" are used
+Warning (275080): Converted elements in bus name "SW" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "SW[0]" to "SW0"
+    Warning (275081): Converted element name(s) from "SW[9]" to "SW9"
+    Warning (275081): Converted element name(s) from "SW[8]" to "SW8"
+    Warning (275081): Converted element name(s) from "SW[7]" to "SW7"
+    Warning (275081): Converted element name(s) from "SW[6]" to "SW6"
+Warning (275009): Pin "SW9" not connected
+Warning (275009): Pin "SW8" not connected
+Warning (275009): Pin "SW7" not connected
+Warning (275009): Pin "SW6" not connected
 Info (12128): Elaborating entity "VGA_SYNC" for hierarchy "VGA_SYNC:inst"
 Info (12128): Elaborating entity "pll25Mhz" for hierarchy "pll25Mhz:inst1"
 Info (12128): Elaborating entity "pll25Mhz_0002" for hierarchy "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pll25Mhz.vhd Line: 32
@@ -886,6 +901,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_d5g1 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/db/altsyncram_d5g1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_d5g1" for hierarchy "char_rom:inst6|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "text_pos_gen" for hierarchy "text_pos_gen:inst7"
+Info (12128): Elaborating entity "pipes" for hierarchy "pipes:inst20"
+Warning (10036): Verilog HDL or VHDL warning at pipes.vhd(17): object "pipes_on" assigned a value but never read File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pipes.vhd Line: 17
+Warning (10541): VHDL Signal Declaration warning at pipes.vhd(19): used implicit default value for signal "pipes_y_pos" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/VGA Testing/pipes.vhd Line: 19
 Info (12128): Elaborating entity "BCD_to_SevenSeg" for hierarchy "BCD_to_SevenSeg:7seg0"
 Info (12128): Elaborating entity "click_counter" for hierarchy "click_counter:inst12"
 Info (13000): Registers with preset signals will power-up high File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/integrated_functions/COMPSYS305-project-G32-main/COMPSYS305-project-G32-main/mouse.vhd Line: 146
@@ -1126,17 +1144,22 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Info (21057): Implemented 273 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW9"
+    Warning (15610): No output dependent on input pin "SW8"
+    Warning (15610): No output dependent on input pin "SW7"
+    Warning (15610): No output dependent on input pin "SW6"
+Info (21057): Implemented 277 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
     Info (21059): Implemented 14 output pins
     Info (21060): Implemented 2 bidirectional pins
     Info (21061): Implemented 245 logic cells
     Info (21064): Implemented 8 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 243 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 261 warnings
     Info: Peak virtual memory: 4868 megabytes
-    Info: Processing ended: Thu May 11 00:41:46 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Processing ended: Fri May 12 22:48:17 2023
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:37
 
 

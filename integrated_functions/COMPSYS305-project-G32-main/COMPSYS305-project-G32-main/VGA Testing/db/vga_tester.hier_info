@@ -3,8 +3,9 @@ VGA_HS <= VGA_SYNC:inst.horiz_sync_out
 CLOCK_50 => pll25Mhz:inst1.refclk
 PS2_DAT <> MOUSE:inst4.mouse_data
 PS2_CLK <> MOUSE:inst4.mouse_clk
-SW[0] => bouncy_ball:inst3.pb2
-SW[0] => not4.IN0
+SW0 => bouncy_ball:inst3.pb2
+SW0 => pipes:inst20.enable
+SW0 => click_counter:inst12.enable
 VGA_VS <= VGA_SYNC:inst.vert_sync_out
 HEX0[0] <= BCD_to_SevenSeg:7seg0.SevenSeg_out[0]
 HEX0[1] <= BCD_to_SevenSeg:7seg0.SevenSeg_out[1]
@@ -19,6 +20,10 @@ LEDR[1] <= left_click.DB_MAX_OUTPUT_PORT_TYPE
 VGA_B[3] <= VGA_SYNC:inst.blue_out
 VGA_G[3] <= VGA_SYNC:inst.green_out
 VGA_R[3] <= VGA_SYNC:inst.red_out
+SW9 => ~NO_FANOUT~
+SW8 => ~NO_FANOUT~
+SW7 => ~NO_FANOUT~
+SW6 => ~NO_FANOUT~
 
 
 |vga_tester|VGA_SYNC:inst
@@ -958,6 +963,33 @@ character_address[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 character_address[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 character_address[4] <= count.DB_MAX_OUTPUT_PORT_TYPE
 character_address[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|vga_tester|pipes:inst20
+enable => ~NO_FANOUT~
+clk => ~NO_FANOUT~
+vert_sync => ~NO_FANOUT~
+pixel_row[0] => ~NO_FANOUT~
+pixel_row[1] => ~NO_FANOUT~
+pixel_row[2] => ~NO_FANOUT~
+pixel_row[3] => ~NO_FANOUT~
+pixel_row[4] => ~NO_FANOUT~
+pixel_row[5] => ~NO_FANOUT~
+pixel_row[6] => ~NO_FANOUT~
+pixel_row[7] => ~NO_FANOUT~
+pixel_row[8] => ~NO_FANOUT~
+pixel_row[9] => ~NO_FANOUT~
+pixel_column[0] => ~NO_FANOUT~
+pixel_column[1] => ~NO_FANOUT~
+pixel_column[2] => ~NO_FANOUT~
+pixel_column[3] => ~NO_FANOUT~
+pixel_column[4] => ~NO_FANOUT~
+pixel_column[5] => ~NO_FANOUT~
+pixel_column[6] => ~NO_FANOUT~
+pixel_column[7] => ~NO_FANOUT~
+pixel_column[8] => ~NO_FANOUT~
+pixel_column[9] => ~NO_FANOUT~
+green <= <VCC>
 
 
 |vga_tester|BCD_to_SevenSeg:7seg0
