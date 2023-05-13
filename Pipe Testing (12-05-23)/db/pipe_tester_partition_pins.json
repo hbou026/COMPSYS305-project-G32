@@ -28,6 +28,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "SW9",
+					"strict" : false
+				},
+				{
+					"name" : "SW8",
+					"strict" : false
+				},
+				{
 					"name" : "KEY[1]",
 					"strict" : false
 				}

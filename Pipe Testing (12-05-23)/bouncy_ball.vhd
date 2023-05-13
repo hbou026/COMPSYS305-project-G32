@@ -8,6 +8,7 @@ ENTITY bouncy_ball IS
 	PORT
 		( pb1, pb2, clk, vert_sync	: IN std_logic;
           pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
+			 height : IN std_logic_vector(1 downto 0);
 		  red, green, blue 			: OUT std_logic);		
 END bouncy_ball;
 
@@ -23,7 +24,16 @@ BEGIN
 
 size <= CONV_STD_LOGIC_VECTOR(26,10);
 -- ball_x_pos and ball_y_pos show the (x,y) for the centre of ball
-ball_y_pos <= CONV_STD_LOGIC_VECTOR(200,10);
+
+ --ball_y_pos <= CONV_STD_LOGIC_VECTOR(320, 10); -- default value
+
+ -- with height select
+ --   ball_y_pos <= CONV_STD_LOGIC_VECTOR(90, 10) when "00",  -- low pipe
+  --                CONV_STD_LOGIC_VECTOR(320, 10) when "01", -- high pipe
+  --                CONV_STD_LOGIC_VECTOR(200, 10) when "10", -- middle pipe
+  --                CONV_STD_LOGIC_VECTOR(140,10) when others;                   -- low/middle pipe
+
+--ball_y_pos <= CONV_STD_LOGIC_VECTOR(200,10);
 
 --ball_on <= '1' when ( ('0' & ball_x_pos <= '0' & pixel_column + size) and ('0' & pixel_column <= '0' & ball_x_pos + size) 	-- x_pos - size <= pixel_column <= x_pos + size
 		--			and ('0' & ball_y_pos <= pixel_row + size) and ('0' & pixel_row <= ball_y_pos + size) )  else	-- y_pos - size <= pixel_row <= y_pos + size
@@ -37,7 +47,7 @@ Green <= (ball_on);
 Blue <= '1' and (not ball_on);
 
 
-Move_Ball: process (vert_sync)  	
+Move_Ball: process (vert_sync, height)  	
 begin
 	-- Move ball once every vertical sync
 	if (rising_edge(vert_sync)) then			
@@ -53,6 +63,17 @@ begin
 		else
 			ball_x_pos <= ball_x_pos + ball_x_motion;
 		end if;
+		
+		case height is
+    when "00" =>
+      ball_y_pos <= CONV_STD_LOGIC_VECTOR(90, 10); -- low pipe
+    when "01" =>
+      ball_y_pos <= CONV_STD_LOGIC_VECTOR(320, 10); -- high pipe
+    when "10" =>
+      ball_y_pos <= CONV_STD_LOGIC_VECTOR(200, 10); -- middle pipe
+    when others =>
+      ball_y_pos <= CONV_STD_LOGIC_VECTOR(140, 10); -- low/middle pipe
+  end case;
 		
 	end if;
 end process Move_Ball;

@@ -300,7 +300,7 @@ GND                          : J3        : gnd    :                   :         
 VCC                          : J4        : power  :                   : 1.1V    :           :                
 GND                          : J5        : gnd    :                   :         :           :                
 MSEL1                        : J6        :        :                   :         : 9A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J7        :        :                   :         : 8A        :                
+SW9                          : J7        : input  : 2.5 V             :         : 8A        : N              
 VGA_G[3]                     : J8        : output : 2.5 V             :         : 8A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : J9        :        :                   :         : 8A        :                
 VCC                          : J10       : power  :                   : 1.1V    :           :                
@@ -322,7 +322,7 @@ VCC                          : K3        : power  :                   : 1.1V    
 GND                          : K4        : gnd    :                   :         :           :                
 VCC                          : K5        : power  :                   : 1.1V    :           :                
 CONF_DONE                    : K6        :        :                   :         : 9A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K7        :        :                   :         : 8A        :                
+SW8                          : K7        : input  : 2.5 V             :         : 8A        : N              
 GND                          : K8        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K9        :        :                   :         : 7A        :                
 GND                          : K10       : gnd    :                   :         :           :                
@@ -367,7 +367,7 @@ GND                          : M4        : gnd    :                   :         
 TDO                          : M5        : output :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M6        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 3B        :                
+SW0                          : M8        : input  : 2.5 V             :         : 3B        : N              
 CLOCK_50                     : M9        : input  : 2.5 V             :         : 3B        : Y              
 GND                          : M10       : gnd    :                   :         :           :                
 VCC                          : M11       : power  :                   : 1.1V    :           :                
@@ -482,7 +482,7 @@ GND                          : U9        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U12       :        :                   :         : 3B        :                
-SW[0]                        : U13       : input  : 2.5 V             :         : 4A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U13       :        :                   :         : 4A        :                
 VCCIO4A                      : U14       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U16       :        :                   :         : 4A        :                
