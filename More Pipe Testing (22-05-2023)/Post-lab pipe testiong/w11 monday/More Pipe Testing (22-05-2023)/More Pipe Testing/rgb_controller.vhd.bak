@@ -1,0 +1,4 @@
+entity rgb_controller is
+port (
+);
+end entity rgb_controller;
