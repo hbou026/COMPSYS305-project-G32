@@ -1,5 +1,5 @@
 Flow report for pipe_tester
-Tue May 23 01:09:57 2023
+Tue May 23 02:29:51 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue May 23 01:09:49 2023       ;
+; Flow Status                     ; Successful - Tue May 23 02:29:43 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipe_tester                                 ;
 ; Top-level Entity Name           ; pipe_tester                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 180 / 18,480 ( < 1 % )                      ;
-; Total registers                 ; 165                                         ;
+; Logic utilization (in ALMs)     ; 194 / 18,480 ( 1 % )                        ;
+; Total registers                 ; 155                                         ;
 ; Total pins                      ; 23 / 224 ( 10 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/23/2023 01:08:29 ;
+; Start date & time ; 05/23/2023 02:28:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipe_tester         ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 ; BLOCK_DESIGN_NAMING                 ; QuartusII                              ; Auto          ; --             ; --         ;
-; COMPILER_SIGNATURE_ID               ; 18587656210645.168476090813724         ; --            ; --             ; --         ;
+; COMPILER_SIGNATURE_ID               ; 18587656210645.168476571231276         ; --            ; --             ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --             ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --             ; --         ;
 ; MISC_FILE                           ; pll25Mhz.cmp                           ; --            ; --             ; --         ;
@@ -103,11 +103,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4849 MB             ; 00:00:33                           ;
-; Fitter               ; 00:00:56     ; 1.0                     ; 6029 MB             ; 00:01:16                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4816 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.2                     ; 5060 MB             ; 00:00:08                           ;
-; Total                ; 00:01:24     ; --                      ; --                  ; 00:02:01                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4856 MB             ; 00:00:33                           ;
+; Fitter               ; 00:00:49     ; 1.0                     ; 6021 MB             ; 00:01:11                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4818 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.2                     ; 5062 MB             ; 00:00:08                           ;
+; Total                ; 00:01:16     ; --                      ; --                  ; 00:01:56                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

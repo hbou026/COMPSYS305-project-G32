@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipe_tester
-Tue May 23 01:08:44 2023
+Tue May 23 02:28:47 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -49,13 +49,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 23 01:08:44 2023       ;
+; Analysis & Synthesis Status     ; Successful - Tue May 23 02:28:47 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipe_tester                                 ;
 ; Top-level Entity Name           ; pipe_tester                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 132                                         ;
+; Total registers                 ; 134                                         ;
 ; Total pins                      ; 23                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -195,34 +195,34 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                     ;
-+---------------------------------------------+-----------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                             ;
-+---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 181                                                                               ;
-;                                             ;                                                                                   ;
-; Combinational ALUT usage for logic          ; 306                                                                               ;
-;     -- 7 input functions                    ; 1                                                                                 ;
-;     -- 6 input functions                    ; 51                                                                                ;
-;     -- 5 input functions                    ; 43                                                                                ;
-;     -- 4 input functions                    ; 35                                                                                ;
-;     -- <=3 input functions                  ; 176                                                                               ;
-;                                             ;                                                                                   ;
-; Dedicated logic registers                   ; 132                                                                               ;
-;                                             ;                                                                                   ;
-; I/O pins                                    ; 23                                                                                ;
-;                                             ;                                                                                   ;
-; Total DSP Blocks                            ; 0                                                                                 ;
-;                                             ;                                                                                   ;
-; Total PLLs                                  ; 1                                                                                 ;
-;     -- PLLs                                 ; 1                                                                                 ;
-;                                             ;                                                                                   ;
-; Maximum fan-out node                        ; pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 67                                                                                ;
-; Total fan-out                               ; 1473                                                                              ;
-; Average fan-out                             ; 3.04                                                                              ;
-+---------------------------------------------+-----------------------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                               ;
++---------------------------------------------+-----------------------------+
+; Resource                                    ; Usage                       ;
++---------------------------------------------+-----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 198                         ;
+;                                             ;                             ;
+; Combinational ALUT usage for logic          ; 322                         ;
+;     -- 7 input functions                    ; 1                           ;
+;     -- 6 input functions                    ; 68                          ;
+;     -- 5 input functions                    ; 36                          ;
+;     -- 4 input functions                    ; 33                          ;
+;     -- <=3 input functions                  ; 184                         ;
+;                                             ;                             ;
+; Dedicated logic registers                   ; 134                         ;
+;                                             ;                             ;
+; I/O pins                                    ; 23                          ;
+;                                             ;                             ;
+; Total DSP Blocks                            ; 0                           ;
+;                                             ;                             ;
+; Total PLLs                                  ; 1                           ;
+;     -- PLLs                                 ; 1                           ;
+;                                             ;                             ;
+; Maximum fan-out node                        ; VGA_SYNC:inst|vert_sync_out ;
+; Maximum fan-out                             ; 69                          ;
+; Total fan-out                               ; 1537                        ;
+; Average fan-out                             ; 3.06                        ;
++---------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -230,14 +230,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name    ; Library Name ;
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------+----------------+--------------+
-; |pipe_tester                        ; 306 (0)             ; 132 (0)                   ; 0                 ; 0          ; 23   ; 0            ; |pipe_tester                                                                    ; pipe_tester    ; work         ;
+; |pipe_tester                        ; 322 (0)             ; 134 (0)                   ; 0                 ; 0          ; 23   ; 0            ; |pipe_tester                                                                    ; pipe_tester    ; work         ;
 ;    |VGA_SYNC:inst|                  ; 40 (40)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|VGA_SYNC:inst                                                      ; VGA_SYNC       ; work         ;
-;    |bouncy_ball:inst5|              ; 97 (97)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|bouncy_ball:inst5                                                  ; bouncy_ball    ; work         ;
-;    |bouncy_ball:inst8|              ; 78 (78)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|bouncy_ball:inst8                                                  ; bouncy_ball    ; work         ;
+;    |bouncy_ball:inst5|              ; 83 (83)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|bouncy_ball:inst5                                                  ; bouncy_ball    ; work         ;
+;    |bouncy_ball:inst8|              ; 113 (113)           ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|bouncy_ball:inst8                                                  ; bouncy_ball    ; work         ;
 ;    |height_gen:inst9|               ; 14 (0)              ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|height_gen:inst9                                                   ; height_gen     ; work         ;
 ;       |rng1:inst|                   ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|height_gen:inst9|rng1:inst                                         ; rng1           ; work         ;
 ;       |rng2:inst1|                  ; 6 (6)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|height_gen:inst9|rng2:inst1                                        ; rng2           ; work         ;
-;    |player:inst6|                   ; 75 (75)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|player:inst6                                                       ; player         ; work         ;
+;    |player:inst6|                   ; 70 (70)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|player:inst6                                                       ; player         ; work         ;
 ;    |pll25Mhz:inst1|                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|pll25Mhz:inst1                                                     ; pll25Mhz       ; pll25mhz     ;
 ;       |pll25Mhz_0002:pll25mhz_inst| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst                         ; pll25Mhz_0002  ; pll25Mhz     ;
 ;          |altera_pll:altera_pll_i|  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |pipe_tester|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i ; altera_pll     ; work         ;
@@ -261,16 +261,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                          ; Reason for Removal                             ;
 +----------------------------------------+------------------------------------------------+
 ; rgb_controller:inst22|green            ; Stuck at VCC due to stuck port data_in         ;
-; bouncy_ball:inst8|ball_y_pos[4,9]      ; Stuck at GND due to stuck port data_in         ;
-; bouncy_ball:inst5|next_pipe            ; Stuck at VCC due to stuck port data_in         ;
-; bouncy_ball:inst5|ball_y_pos[4,9]      ; Stuck at GND due to stuck port data_in         ;
+; bouncy_ball:inst8|ball_y_pos[0]        ; Stuck at GND due to stuck port data_in         ;
+; bouncy_ball:inst8|ball_y_pos[4]        ; Stuck at VCC due to stuck port data_in         ;
+; bouncy_ball:inst8|ball_y_pos[9]        ; Stuck at GND due to stuck port data_in         ;
+; bouncy_ball:inst5|ball_y_pos[0]        ; Stuck at GND due to stuck port data_in         ;
+; bouncy_ball:inst5|ball_y_pos[4]        ; Stuck at VCC due to stuck port data_in         ;
+; bouncy_ball:inst5|ball_y_pos[9]        ; Stuck at GND due to stuck port data_in         ;
 ; player:inst6|ball_y_motion[5..9]       ; Merged with player:inst6|ball_y_motion[4]      ;
-; bouncy_ball:inst5|ball_x_motion[4..9]  ; Merged with bouncy_ball:inst5|ball_x_motion[3] ;
 ; bouncy_ball:inst8|ball_x_motion[4..9]  ; Merged with bouncy_ball:inst8|ball_x_motion[3] ;
-; bouncy_ball:inst5|ball_y_pos[2,5]      ; Merged with bouncy_ball:inst5|ball_y_pos[1]    ;
-; bouncy_ball:inst8|ball_y_pos[2,5]      ; Merged with bouncy_ball:inst8|ball_y_pos[1]    ;
+; bouncy_ball:inst5|ball_x_motion[4..9]  ; Merged with bouncy_ball:inst5|ball_x_motion[3] ;
 ; VGA_SYNC:inst|pixel_row[9]             ; Stuck at GND due to stuck port data_in         ;
-; Total Number of Removed Registers = 28 ;                                                ;
+; Total Number of Removed Registers = 25 ;                                                ;
 +----------------------------------------+------------------------------------------------+
 
 
@@ -279,12 +280,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 132   ;
+; Total registers                              ; 134   ;
 ; Number of registers using Synchronous Clear  ; 20    ;
-; Number of registers using Synchronous Load   ; 22    ;
+; Number of registers using Synchronous Load   ; 11    ;
 ; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 61    ;
+; Number of registers using Clock Enable       ; 72    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -294,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; height_gen:inst9|rng2:inst1|lfsr_reg[7] ; 7       ;
+; height_gen:inst9|rng2:inst1|lfsr_reg[7] ; 9       ;
 ; height_gen:inst9|rng1:inst|lfsr_reg[6]  ; 2       ;
 ; height_gen:inst9|rng2:inst1|lfsr_reg[5] ; 2       ;
 ; height_gen:inst9|rng2:inst1|lfsr_reg[4] ; 1       ;
@@ -311,7 +312,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |pipe_tester|VGA_SYNC:inst|v_count[5]      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |pipe_tester|rgb_controller:inst22|blue    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |pipe_tester|VGA_SYNC:inst|v_count[6]      ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |pipe_tester|player:inst6|ball_y_motion[1] ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |pipe_tester|player:inst6|ball_y_motion[4] ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |pipe_tester|player:inst6|gravity_timer[3] ;
@@ -592,34 +594,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 132                         ;
+; arriav_ff             ; 134                         ;
 ;     CLR               ; 16                          ;
-;     ENA               ; 40                          ;
+;     ENA               ; 51                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     ENA SLD           ; 11                          ;
 ;     SCLR              ; 10                          ;
-;     SLD               ; 11                          ;
-;     plain             ; 34                          ;
-; arriav_lcell_comb     ; 307                         ;
-;     arith             ; 123                         ;
-;         0 data inputs ; 5                           ;
-;         1 data inputs ; 80                          ;
+;     plain             ; 36                          ;
+; arriav_lcell_comb     ; 323                         ;
+;     arith             ; 139                         ;
+;         0 data inputs ; 7                           ;
+;         1 data inputs ; 94                          ;
 ;         2 data inputs ; 38                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
 ;     normal            ; 183                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 16                          ;
-;         2 data inputs ; 23                          ;
+;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 14                          ;
-;         4 data inputs ; 35                          ;
-;         5 data inputs ; 43                          ;
-;         6 data inputs ; 51                          ;
+;         4 data inputs ; 33                          ;
+;         5 data inputs ; 36                          ;
+;         6 data inputs ; 68                          ;
 ; boundary_port         ; 23                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.50                        ;
-; Average LUT depth     ; 3.17                        ;
+; Average LUT depth     ; 3.29                        ;
 +-----------------------+-----------------------------+
 
 
@@ -628,7 +629,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -638,7 +639,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 23 01:08:28 2023
+    Info: Processing started: Tue May 23 02:28:32 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipe_tester -c pipe_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -656,7 +657,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll25mh
 Info (12021): Found 1 design units, including 1 entities, in source file pipe_tester.bdf
     Info (12023): Found entity 1: pipe_tester
 Info (12021): Found 2 design units, including 1 entities, in source file bouncy_ball.vhd
-    Info (12022): Found design unit 1: bouncy_ball-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/bouncy_ball.vhd Line: 19
+    Info (12022): Found design unit 1: bouncy_ball-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/bouncy_ball.vhd Line: 20
     Info (12023): Found entity 1: bouncy_ball File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/bouncy_ball.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file player.vhd
     Info (12022): Found design unit 1: player-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/player.vhd Line: 15
@@ -685,7 +686,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file rng2.vh
 Info (12021): Found 1 design units, including 1 entities, in source file height_gen.bdf
     Info (12023): Found entity 1: height_gen
 Info (12127): Elaborating entity "pipe_tester" for the top level hierarchy
+Warning (275011): Block or symbol "score_counter" of instance "inst7" overlaps another block or symbol
 Warning (275089): Not all bits in bus "SW[9..0]" are used
+Warning (275009): Pin "SW[9]" not connected
 Info (12128): Elaborating entity "VGA_SYNC" for hierarchy "VGA_SYNC:inst"
 Info (12128): Elaborating entity "pll25Mhz" for hierarchy "pll25Mhz:inst1"
 Info (12128): Elaborating entity "pll25Mhz_0002" for hierarchy "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/pll25Mhz.vhd Line: 32
@@ -756,7 +759,7 @@ Info (12133): Instantiated megafunction "pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_i
 Info (12128): Elaborating entity "rgb_controller" for hierarchy "rgb_controller:inst22"
 Info (12128): Elaborating entity "player" for hierarchy "player:inst6"
 Info (12128): Elaborating entity "bouncy_ball" for hierarchy "bouncy_ball:inst5"
-Warning (10492): VHDL Process Statement warning at bouncy_ball.vhd(50): signal "next_enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/bouncy_ball.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at bouncy_ball.vhd(51): signal "next_enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/bouncy_ball.vhd Line: 51
 Info (12128): Elaborating entity "height_gen" for hierarchy "height_gen:inst9"
 Info (12128): Elaborating entity "conc2" for hierarchy "height_gen:inst9|conc2:inst2"
 Info (12128): Elaborating entity "rng1" for hierarchy "height_gen:inst9|rng1:inst"
@@ -808,15 +811,15 @@ Warning: RST port on the PLL is not properly connected on instance pll25Mhz:inst
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[0]"
     Warning (15610): No output dependent on input pin "SW[9]"
-Info (21057): Implemented 372 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 390 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 348 logic cells
+    Info (21061): Implemented 366 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Tue May 23 01:08:44 2023
-    Info: Elapsed time: 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Tue May 23 02:28:47 2023
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:33
 
 

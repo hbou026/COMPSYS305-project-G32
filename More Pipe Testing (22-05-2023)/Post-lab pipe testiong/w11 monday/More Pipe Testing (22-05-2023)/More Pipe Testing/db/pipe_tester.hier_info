@@ -22,10 +22,10 @@ LEDR[6] <= score_counter:inst7.score[6]
 LEDR[7] <= score_counter:inst7.score[7]
 LEDR[8] <= score_counter:inst7.score[8]
 LEDR[9] <= score_counter:inst7.score[9]
-SW[9] => score_counter:inst7.reset
 VGA_B[3] <= VGA_SYNC:inst.blue_out
 VGA_G[3] <= VGA_SYNC:inst.green_out
 VGA_R[3] <= VGA_SYNC:inst.red_out
+SW[9] => ~NO_FANOUT~
 
 
 |pipe_tester|VGA_SYNC:inst
@@ -296,14 +296,20 @@ zdbfbclk <> <GND>
 
 |pipe_tester|rgb_controller:inst22
 player_on => red.DATAA
+player_on => v_death.DATAB
+player_on => v_death.DATAB
 player_on => blue.DATAA
-player_on => death~reg0.DATAIN
-pipe1_on => process_0.IN0
-pipe2_on => process_0.IN1
+pipe1_on => red.OUTPUTSELECT
+pipe1_on => blue.OUTPUTSELECT
+pipe1_on => v_death.OUTPUTSELECT
+pipe2_on => red.OUTPUTSELECT
+pipe2_on => blue.OUTPUTSELECT
+pipe2_on => v_death.OUTPUTSELECT
 clk => death~reg0.CLK
 clk => blue~reg0.CLK
 clk => red~reg0.CLK
 clk => green~reg0.CLK
+clk => v_death.CLK
 red <= red~reg0.DB_MAX_OUTPUT_PORT_TYPE
 green <= green~reg0.DB_MAX_OUTPUT_PORT_TYPE
 blue <= blue~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -412,7 +418,6 @@ x_pos[10] <= <GND>
 pb1 => ~NO_FANOUT~
 pb2 => ~NO_FANOUT~
 clk => ~NO_FANOUT~
-vert_sync => next_pipe~reg0.CLK
 vert_sync => ball_x_motion[0].CLK
 vert_sync => ball_x_motion[1].CLK
 vert_sync => ball_x_motion[2].CLK
@@ -490,6 +495,7 @@ height[0] => Mux2.IN5
 height[0] => Mux3.IN5
 height[0] => Mux4.IN5
 height[0] => ball_y_pos.DATAB
+height[0] => ball_y_pos.DATAB
 height[1] => Mux0.IN4
 height[1] => Mux1.IN4
 height[1] => Mux2.IN4
@@ -498,14 +504,14 @@ height[1] => Mux4.IN4
 speed[0] => Add8.IN6
 speed[1] => Add8.IN5
 speed[2] => Add8.IN4
-next_enable => Move_Ball.IN1
+next_enable => ball_on.IN1
 next_enable => red.IN1
 next_enable => blue.IN1
+next_enable => next_pipe.OUTPUTSELECT
+next_enable => ball_x_motion[3].ENA
+next_enable => ball_x_motion[2].ENA
 next_enable => ball_x_motion[1].ENA
 next_enable => ball_x_motion[0].ENA
-next_enable => next_pipe~reg0.ENA
-next_enable => ball_x_motion[2].ENA
-next_enable => ball_x_motion[3].ENA
 next_enable => ball_x_motion[4].ENA
 next_enable => ball_x_motion[5].ENA
 next_enable => ball_x_motion[6].ENA
@@ -533,10 +539,21 @@ next_enable => ball_x_pos[7].ENA
 next_enable => ball_x_pos[8].ENA
 next_enable => ball_x_pos[9].ENA
 next_enable => ball_x_pos[10].ENA
+next_x_pos[0] => LessThan6.IN22
+next_x_pos[1] => LessThan6.IN21
+next_x_pos[2] => LessThan6.IN20
+next_x_pos[3] => LessThan6.IN19
+next_x_pos[4] => LessThan6.IN18
+next_x_pos[5] => LessThan6.IN17
+next_x_pos[6] => LessThan6.IN16
+next_x_pos[7] => LessThan6.IN15
+next_x_pos[8] => LessThan6.IN14
+next_x_pos[9] => LessThan6.IN13
+next_x_pos[10] => LessThan6.IN12
 red <= red.DB_MAX_OUTPUT_PORT_TYPE
 green <= ball_on.DB_MAX_OUTPUT_PORT_TYPE
 blue <= blue.DB_MAX_OUTPUT_PORT_TYPE
-next_pipe <= next_pipe~reg0.DB_MAX_OUTPUT_PORT_TYPE
+next_pipe <= next_pipe.DB_MAX_OUTPUT_PORT_TYPE
 pipe_on <= ball_on.DB_MAX_OUTPUT_PORT_TYPE
 x_pos[0] <= ball_x_pos[0].DB_MAX_OUTPUT_PORT_TYPE
 x_pos[1] <= ball_x_pos[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -607,20 +624,10 @@ reset => lfsr_reg[7].PRESET
 randomBit <= lfsr_reg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pipe_tester|three_bit_to_integer:inst4
-bit2 => int[2].DATAIN
-bit1 => int[1].DATAIN
-bit0 => int[0].DATAIN
-int[0] <= bit0.DB_MAX_OUTPUT_PORT_TYPE
-int[1] <= bit1.DB_MAX_OUTPUT_PORT_TYPE
-int[2] <= bit2.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |pipe_tester|bouncy_ball:inst8
 pb1 => ~NO_FANOUT~
 pb2 => ~NO_FANOUT~
 clk => ~NO_FANOUT~
-vert_sync => next_pipe~reg0.CLK
 vert_sync => ball_x_motion[0].CLK
 vert_sync => ball_x_motion[1].CLK
 vert_sync => ball_x_motion[2].CLK
@@ -698,6 +705,7 @@ height[0] => Mux2.IN5
 height[0] => Mux3.IN5
 height[0] => Mux4.IN5
 height[0] => ball_y_pos.DATAB
+height[0] => ball_y_pos.DATAB
 height[1] => Mux0.IN4
 height[1] => Mux1.IN4
 height[1] => Mux2.IN4
@@ -706,14 +714,14 @@ height[1] => Mux4.IN4
 speed[0] => Add8.IN6
 speed[1] => Add8.IN5
 speed[2] => Add8.IN4
-next_enable => Move_Ball.IN1
+next_enable => ball_on.IN1
 next_enable => red.IN1
 next_enable => blue.IN1
+next_enable => next_pipe.OUTPUTSELECT
+next_enable => ball_x_motion[3].ENA
+next_enable => ball_x_motion[2].ENA
 next_enable => ball_x_motion[1].ENA
 next_enable => ball_x_motion[0].ENA
-next_enable => next_pipe~reg0.ENA
-next_enable => ball_x_motion[2].ENA
-next_enable => ball_x_motion[3].ENA
 next_enable => ball_x_motion[4].ENA
 next_enable => ball_x_motion[5].ENA
 next_enable => ball_x_motion[6].ENA
@@ -741,10 +749,21 @@ next_enable => ball_x_pos[7].ENA
 next_enable => ball_x_pos[8].ENA
 next_enable => ball_x_pos[9].ENA
 next_enable => ball_x_pos[10].ENA
+next_x_pos[0] => LessThan6.IN22
+next_x_pos[1] => LessThan6.IN21
+next_x_pos[2] => LessThan6.IN20
+next_x_pos[3] => LessThan6.IN19
+next_x_pos[4] => LessThan6.IN18
+next_x_pos[5] => LessThan6.IN17
+next_x_pos[6] => LessThan6.IN16
+next_x_pos[7] => LessThan6.IN15
+next_x_pos[8] => LessThan6.IN14
+next_x_pos[9] => LessThan6.IN13
+next_x_pos[10] => LessThan6.IN12
 red <= red.DB_MAX_OUTPUT_PORT_TYPE
 green <= ball_on.DB_MAX_OUTPUT_PORT_TYPE
 blue <= blue.DB_MAX_OUTPUT_PORT_TYPE
-next_pipe <= next_pipe~reg0.DB_MAX_OUTPUT_PORT_TYPE
+next_pipe <= next_pipe.DB_MAX_OUTPUT_PORT_TYPE
 pipe_on <= ball_on.DB_MAX_OUTPUT_PORT_TYPE
 x_pos[0] <= ball_x_pos[0].DB_MAX_OUTPUT_PORT_TYPE
 x_pos[1] <= ball_x_pos[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -757,6 +776,15 @@ x_pos[7] <= ball_x_pos[7].DB_MAX_OUTPUT_PORT_TYPE
 x_pos[8] <= ball_x_pos[8].DB_MAX_OUTPUT_PORT_TYPE
 x_pos[9] <= ball_x_pos[9].DB_MAX_OUTPUT_PORT_TYPE
 x_pos[10] <= ball_x_pos[10].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipe_tester|three_bit_to_integer:inst4
+bit2 => int[2].DATAIN
+bit1 => int[1].DATAIN
+bit0 => int[0].DATAIN
+int[0] <= bit0.DB_MAX_OUTPUT_PORT_TYPE
+int[1] <= bit1.DB_MAX_OUTPUT_PORT_TYPE
+int[2] <= bit2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |pipe_tester|score_counter:inst7

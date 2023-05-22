@@ -12,18 +12,30 @@ architecture beh of rgb_controller is
 begin
 
 	process (clk)
+	variable v_death : std_logic;
 	begin
 		if (rising_edge(clk)) then
-			if (pipe1_on = '1' or pipe2_on = '1') then -- green
+			if (pipe1_on = '1') then -- green
 				green <= '1';
 				red <= '0';
 				blue <= '0';
 				
 				if (player_on ='1') then
-					death <= '1';
+					v_death := '1';
 					
 				else 
-					death <= '0';
+					v_death := '0';
+				end if;
+				elsif (pipe2_on = '1') then -- green
+				green <= '1';
+				red <= '0';
+				blue <= '0';
+				
+				if (player_on ='1') then
+					v_death := '1';
+					
+				else 
+					v_death := '0';
 				end if;
 			elsif (player_on = '1') then -- yellow
 				red <= '1';
@@ -31,13 +43,12 @@ begin
 				blue <= '0';
 			
 			
-			
 			else -- aqua (bg)
 				red <= '0';
 				green <= '1';
 				blue <= '1';
 			end if;
-				
+				death <= v_death;
 		end if;
 	end process;
 
