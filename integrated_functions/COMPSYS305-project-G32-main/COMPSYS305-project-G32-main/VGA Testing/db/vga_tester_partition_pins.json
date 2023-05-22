@@ -4,75 +4,171 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "VGA_HS",
+					"name" : "font_row[0]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_VS",
+					"name" : "font_row[1]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[6]",
+					"name" : "font_row[2]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[5]",
+					"name" : "font_col[0]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[4]",
+					"name" : "font_col[1]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[3]",
+					"name" : "font_col[2]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[2]",
+					"name" : "character_address[0]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[1]",
+					"name" : "character_address[1]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[0]",
+					"name" : "character_address[2]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[1]",
+					"name" : "character_address[3]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[0]",
+					"name" : "character_address[4]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[3]",
+					"name" : "character_address[5]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[3]",
+					"name" : "pixel_row[1]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[3]",
+					"name" : "pixel_row[9]",
 					"strict" : false
 				},
 				{
-					"name" : "PS2_DAT",
+					"name" : "pixel_row[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PS2_CLK",
+					"name" : "pixel_row[5]",
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "pixel_row[2]",
 					"strict" : false
 				},
 				{
-					"name" : "SW0",
+					"name" : "pixel_row[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_row[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_row[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_row[8]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[8]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[9]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_col[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "score[0]",
+					"strict" : false
+				},
+				{
+					"name" : "life_point[0]",
+					"strict" : false
+				},
+				{
+					"name" : "score[1]",
+					"strict" : false
+				},
+				{
+					"name" : "life_point[1]",
+					"strict" : false
+				},
+				{
+					"name" : "life_point[2]",
+					"strict" : false
+				},
+				{
+					"name" : "score[2]",
+					"strict" : false
+				},
+				{
+					"name" : "score[3]",
+					"strict" : false
+				},
+				{
+					"name" : "score[4]",
+					"strict" : false
+				},
+				{
+					"name" : "score[5]",
 					"strict" : false
 				}
 			]
