@@ -1,0 +1,77 @@
+library IEEE;
+use  IEEE.STD_LOGIC_1164.all;
+use  IEEE.STD_LOGIC_ARITH.all;
+use  IEEE.STD_LOGIC_UNSIGNED.all;
+
+ENTITY controller IS
+	PORT ( clk, mode1, mode2, start, ball_on, pipe_on, text1_on, text2_on, dead : IN STD_LOGIC;
+			 game_mode : OUT INTEGER RANGE 0 TO 3;
+			 red, green, blue, enable : OUT STD_LOGIC
+			);
+END controller;
+
+ARCHITECTURE behav OF controller IS
+
+SIGNAL status : STD_LOGIC_VETOR(1 DOWNTO 0) := "00"
+
+BEGIN
+
+	MODE_CONTROLLER : PROCESS(mode1, mode2)
+	BEGIN
+		CASE (mode1 & mode2) IS
+			WHEN "00" => game_mode <= 0;
+			WHEN "01" => game_mode <= 1;
+			WHEN "10" => game_mode <= 2;
+			WHEN "11" => game_mode <= 3;
+		END CASE;
+	END PROCESS;
+	
+	STATUS_CONTROLLER : PROCESS(start, dead)
+	BEGIN
+		IF (rising_edge(start)) THEN
+			status <= "01";
+		END IF;
+		
+		IF (rising_edge(dead)) THEN
+			status <= "00";
+		END IF;
+	END PROCESS;
+	
+	WINDOW_CONTROLLER : PREOCEE(clk, status, text1_on, text2_on, pipe_on, ball_on)
+	BEGIN
+		IF (rising_edge(clk)) THEN
+			CASE status IS
+				WHEN "00" =>
+					red <= text1_on;
+					green <= text2_on;
+					blue <= '0';
+					enable <= '0';
+				WHEN "01" =>
+					enable <= '1';
+					IF (text2_on = '1') THEN
+						red <= '1';
+						green <= '1';
+						blue <= '0';
+					ELSIF (ball_on = '1') THEN
+						red <= '1';
+						green <= '1';
+						blue <= '0';
+					ELSIF (pipe_on = '1') THEN
+						red <= '0';
+						green <= '1';
+						blue <= '0';
+					ELSE
+						red <= '0';
+						green <= '0';
+						blue <= '1';
+					END IF;
+				WHEN OTHERS =>
+					red <= text1_on;
+					green <= text2_on;
+					blue <= '0';
+					enable <= '0';
+			END CASE;
+		END IF;
+	END PROCESS;
+END behav;	
+					
