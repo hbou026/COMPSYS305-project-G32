@@ -1284,6 +1284,21 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 240 128))
 	)
 )
+(symbol
+	(rect -712 888 -568 968)
+	(text "temp_score_gen" (rect 5 0 86 12)(font "Arial" ))
+	(text "inst7" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 144 32)
+		(output)
+		(text "score[7..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "score[7..0]" (rect 79 27 132 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 64))
+	)
+)
 (connector
 	(pt 408 112)
 	(pt 408 200)
@@ -1727,11 +1742,6 @@ refer to the applicable agreement for further details.
 	(pt -504 608)
 )
 (connector
-	(text "pipe_green" (rect -518 608 -465 625)(font "Intel Clear" ))
-	(pt -464 624)
-	(pt -520 624)
-)
-(connector
 	(text "clk" (rect -518 624 -504 641)(font "Intel Clear" ))
 	(pt -464 640)
 	(pt -520 640)
@@ -1972,10 +1982,20 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "game_mode[1..0]" (rect -416 831 -399 914)(font "Intel Clear" )(vertical))
+	(text "<<__$DEF_ALIAS147>>" (rect -416 831 -399 943)(font "Intel Clear" )(vertical)(invisible))
+	(pt -400 920)
 	(pt -400 888)
-	(pt -400 912)
 	(bus)
+)
+(connector
+	(pt -400 920)
+	(pt -568 920)
+	(bus)
+)
+(connector
+	(text "pipe_on" (rect -518 608 -481 625)(font "Intel Clear" ))
+	(pt -464 624)
+	(pt -520 624)
 )
 (junction (pt 360 112))
 (junction (pt 856 272))

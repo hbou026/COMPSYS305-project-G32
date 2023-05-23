@@ -152,7 +152,8 @@ character_address <= cha_add;
 					WHEN 64 TO 79 => count := 18;
 					WHEN 80 TO 95 => count := 5;
 					WHEN 96 TO 111 => count :=32;
-					WHEN 112 TO 127 => count := (CONV_INTEGER(score) + 48);
+					WHEN 112 TO 127 => count := ((CONV_INTEGER(score) / 10) + 48);
+					WHEN 128 TO 143 => count := ((CONV_INTEGER(score) MOD 10) + 48);
 					WHEN OTHERS => count := 32;
 				END CASE;
 				

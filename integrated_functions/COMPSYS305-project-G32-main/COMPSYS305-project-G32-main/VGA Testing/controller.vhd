@@ -34,10 +34,16 @@ BEGIN
 		IF (rising_edge(clk)) THEN
 			CASE status IS
 				WHEN "00" =>
-					red <= text1_on;
-					green <= text1_on;
-					blue <= '0';
 					enable <= '0';
+					IF (text1_on = '1') THEN
+						red <= text1_on;
+						green <= text1_on;
+						blue <= '0';
+					ELSE
+						red <= '0';
+						green <= '0';
+						blue <= '1';
+					END IF;
 				WHEN "01" =>
 					enable <= '1';
 					IF (text2_on = '1') THEN
