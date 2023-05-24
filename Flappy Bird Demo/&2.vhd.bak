@@ -1,0 +1,15 @@
+library IEEE;
+USE IEEE.STD_LOGIC_1164.all;
+USE  IEEE.STD_LOGIC_ARITH.all;
+USE  IEEE.STD_LOGIC_SIGNED.all;
+
+entity &2 is
+port (D1, D0 : IN std_logic;
+		Q : OUT std_logic_vector(1 downto 0));
+end entity &2;
+
+architecture b1 of &2 is
+begin
+	Q <= D1 & D0;
+
+end architecture b1;

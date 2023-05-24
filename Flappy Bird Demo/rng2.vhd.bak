@@ -1,0 +1,35 @@
+
+-- code for a psuedo-rng using LFSRs. Written by Harrison Bound with assistance from ChatGPT.
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity rng2 is
+  generic (
+    WIDTH : positive := 8  -- Number of shift register stages
+  );
+  port (
+    clk      : in  std_logic;      -- Clock input
+    reset    : in  std_logic;      -- Reset input
+    randomBit: out std_logic       -- Output pseudo-random bit
+  );
+end entity rng2;
+
+architecture behavioral of rng2 is
+  signal lfsr_reg : std_logic_vector(WIDTH - 1 downto 0);
+  signal feedback : std_logic;
+begin
+  process (clk, reset)
+    variable lfsr_xor : std_logic;
+  begin
+    if reset = '1' then
+      lfsr_reg <= "01010101";  -- Initialize LFSR with a non-zero value
+    elsif rising_edge(clk) then
+      lfsr_xor := lfsr_reg(WIDTH - 1) xor lfsr_reg(WIDTH - 2) xor lfsr_reg(WIDTH - 3) xor lfsr_reg(0);
+      lfsr_reg <= lfsr_reg(WIDTH - 2 downto 0) & lfsr_xor;
+    end if;
+  end process;
+
+  feedback <= lfsr_reg(WIDTH - 1);  -- Feedback tap at the MSB
+
+  randomBit <= feedback;  -- Output the pseudo-random bit
+end architecture behavioral;
