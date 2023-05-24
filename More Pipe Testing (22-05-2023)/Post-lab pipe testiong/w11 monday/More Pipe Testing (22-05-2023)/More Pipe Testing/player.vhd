@@ -6,10 +6,11 @@ USE  IEEE.STD_LOGIC_SIGNED.all;
 
 ENTITY player IS
 	PORT
-		( pb1, pb2, clk, vert_sync	: IN std_logic;
+		( pb1, enable, clk, vert_sync	: IN std_logic;
           pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
-		  red, green, blue, player_on 			: OUT std_logic;
-		  x_pos : OUT std_logic_vector(10 downto 0));		
+		   player_on 			: OUT std_logic;
+		  x_pos : OUT std_logic_vector(10 downto 0);
+		  death : OUT std_logic);		
 END player;
 
 architecture behavior of player is
@@ -39,17 +40,15 @@ x_pos <= ball_x_pos;
 player_on <= ball_on;
 -- Colours for pixel data on video signal
 -- Changing the background and ball colour by pushbuttons
-Red <=  '1';
-Green <= (not pb2) and (not ball_on);
-Blue <=  not ball_on;
 
 
-Move_Ball: process (clk, vert_sync, pb1)  	
+
+Move_Ball: process (clk, vert_sync, pb1, enable)  	
 begin
 
 
 	-- Move ball once every vertical sync
-	if (rising_edge(vert_sync)) then			
+	if (rising_edge(vert_sync) and enable = '1') then			
 		
 		
 		if (gravity_timer /= "0101") then 
@@ -68,11 +67,14 @@ begin
 		if ( ('0' & ball_y_pos >= CONV_STD_LOGIC_VECTOR(479,10) - size) ) then
 			ball_y_motion <= - CONV_STD_LOGIC_VECTOR(4,10);
 			move_step_int <= -4;
+			death <= '1';
 		elsif (ball_y_pos <= size) then 
 			ball_y_motion <= CONV_STD_LOGIC_VECTOR(2,10);
 			move_step_int <= 2;
+			death <= '0';
 		else
 			ball_y_motion <= CONV_STD_LOGIC_VECTOR(move_step_int,10); -- set motion
+			death <= '0';
 		end if;
 		
 		

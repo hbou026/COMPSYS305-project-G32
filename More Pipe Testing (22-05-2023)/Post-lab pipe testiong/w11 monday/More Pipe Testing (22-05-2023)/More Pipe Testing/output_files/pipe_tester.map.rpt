@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipe_tester
-Tue May 23 02:28:47 2023
+Wed May 24 23:56:57 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 23 02:28:47 2023       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 24 23:56:57 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipe_tester                                 ;
 ; Top-level Entity Name           ; pipe_tester                                 ;
@@ -200,14 +200,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 198                         ;
+; Estimate of Logic utilization (ALMs needed) ; 197                         ;
 ;                                             ;                             ;
 ; Combinational ALUT usage for logic          ; 322                         ;
 ;     -- 7 input functions                    ; 1                           ;
-;     -- 6 input functions                    ; 68                          ;
-;     -- 5 input functions                    ; 36                          ;
+;     -- 6 input functions                    ; 66                          ;
+;     -- 5 input functions                    ; 37                          ;
 ;     -- 4 input functions                    ; 33                          ;
-;     -- <=3 input functions                  ; 184                         ;
+;     -- <=3 input functions                  ; 185                         ;
 ;                                             ;                             ;
 ; Dedicated logic registers                   ; 134                         ;
 ;                                             ;                             ;
@@ -220,8 +220,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                             ;
 ; Maximum fan-out node                        ; VGA_SYNC:inst|vert_sync_out ;
 ; Maximum fan-out                             ; 69                          ;
-; Total fan-out                               ; 1537                        ;
-; Average fan-out                             ; 3.06                        ;
+; Total fan-out                               ; 1551                        ;
+; Average fan-out                             ; 3.08                        ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -285,7 +285,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 11    ;
 ; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 72    ;
+; Number of registers using Clock Enable       ; 91    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -596,11 +596,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 134                         ;
 ;     CLR               ; 16                          ;
-;     ENA               ; 51                          ;
+;     ENA               ; 70                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     ENA SLD           ; 11                          ;
 ;     SCLR              ; 10                          ;
-;     plain             ; 36                          ;
+;     plain             ; 17                          ;
 ; arriav_lcell_comb     ; 323                         ;
 ;     arith             ; 139                         ;
 ;         0 data inputs ; 7                           ;
@@ -611,11 +611,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 183                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 16                          ;
-;         2 data inputs ; 15                          ;
+;         2 data inputs ; 16                          ;
 ;         3 data inputs ; 14                          ;
 ;         4 data inputs ; 33                          ;
-;         5 data inputs ; 36                          ;
-;         6 data inputs ; 68                          ;
+;         5 data inputs ; 37                          ;
+;         6 data inputs ; 66                          ;
 ; boundary_port         ; 23                          ;
 ; generic_pll           ; 1                           ;
 ;                       ;                             ;
@@ -629,7 +629,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -639,7 +639,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 23 02:28:32 2023
+    Info: Processing started: Wed May 24 23:56:41 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipe_tester -c pipe_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -660,7 +660,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file bouncy_
     Info (12022): Found design unit 1: bouncy_ball-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/bouncy_ball.vhd Line: 20
     Info (12023): Found entity 1: bouncy_ball File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/bouncy_ball.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file player.vhd
-    Info (12022): Found design unit 1: player-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/player.vhd Line: 15
+    Info (12022): Found design unit 1: player-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/player.vhd Line: 16
     Info (12023): Found entity 1: player File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/player.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file conc2.vhd
     Info (12022): Found design unit 1: conc2-b1 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/More Pipe Testing (22-05-2023)/Post-lab pipe testiong/w11 monday/More Pipe Testing (22-05-2023)/More Pipe Testing/conc2.vhd Line: 11
@@ -817,9 +817,9 @@ Info (21057): Implemented 390 device resources after synthesis - the final resou
     Info (21061): Implemented 366 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4856 megabytes
-    Info: Processing ended: Tue May 23 02:28:47 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Wed May 24 23:56:57 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:31
 
 
