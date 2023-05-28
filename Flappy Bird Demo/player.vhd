@@ -20,6 +20,7 @@ SIGNAL size 					: std_logic_vector(9 DOWNTO 0);
 SIGNAL ball_y_pos				: std_logic_vector(9 DOWNTO 0);
 SiGNAL ball_x_pos				: std_logic_vector(10 DOWNTO 0);
 SIGNAL ball_y_motion			: std_logic_vector(9 DOWNTO 0);
+signal prev_enable 			: std_logic := '0';
 
 signal gravity_timer : std_logic_vector(3 downto 0) := "0000";
 signal move_step_int : integer range -10 to 10 := 0;
@@ -79,7 +80,14 @@ begin
 		
 		
 		-- Compute next ball Y position
-		ball_y_pos <= ball_y_pos + ball_y_motion;
+		if (enable = '1' and prev_enable = '0') then
+			ball_y_pos <= CONV_STD_LOGIC_VECTOR(0, 10);
+		else
+			ball_y_pos <= ball_y_pos + ball_y_motion;
+		end if;
+
+		
+		prev_enable <= enable;
 		
 		--pb1_prev <= pb1
 	end if;

@@ -38,22 +38,6 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -432 616 -256 632)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "pipeSpeed[2..0]" (rect 5 0 81 12)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 40 112 208 128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clock" (rect 5 0 30 12)(font "Arial" ))
@@ -89,7 +73,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 704 728 872 744)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "mode1" (rect 5 0 39 12)(font "Arial" ))
+	(text "mode1" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -105,7 +89,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 840 760 1008 776)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "start_button" (rect 5 0 65 12)(font "Arial" ))
+	(text "start_button" (rect 5 0 64 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1220,7 +1204,7 @@ refer to the applicable agreement for further details.
 		(pt 184 32)
 		(output)
 		(text "score[7..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "score[7..0]" (rect 119 27 163 39)(font "Arial" ))
+		(text "score[7..0]" (rect 119 27 172 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32)(line_width 3))
 	)
 	(drawing
@@ -1385,6 +1369,42 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 248 96))
 	)
 )
+(symbol
+	(rect 1016 1208 1224 1320)
+	(text "speed_mod" (rect 5 0 61 12)(font "Arial" ))
+	(text "inst16" (rect 8 96 36 113)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "gamemode[1..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "gamemode[1..0]" (rect 21 27 101 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "score[7..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "score[7..0]" (rect 21 43 74 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "v_sync" (rect 0 0 37 12)(font "Arial" ))
+		(text "v_sync" (rect 21 59 58 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "speed[2..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "speed[2..0]" (rect 141 27 196 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 96))
+	)
+)
 (connector
 	(pt 240 168)
 	(pt 240 192)
@@ -1472,10 +1492,6 @@ refer to the applicable agreement for further details.
 	(pt 784 448)
 	(pt 744 448)
 	(bus)
-)
-(connector
-	(pt 824 288)
-	(pt 824 472)
 )
 (connector
 	(pt 8 560)
@@ -1836,12 +1852,6 @@ refer to the applicable agreement for further details.
 	(pt 8 464)
 )
 (connector
-	(text "speed[2..0]" (rect -254 608 -203 625)(font "Intel Clear" ))
-	(pt -256 624)
-	(pt -200 624)
-	(bus)
-)
-(connector
 	(text "player_death" (rect 330 528 393 545)(font "Intel Clear" ))
 	(pt 320 544)
 	(pt 384 544)
@@ -2107,11 +2117,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1248 1040)
-	(pt 1336 1040)
-	(bus)
-)
-(connector
 	(pt 1248 880)
 	(pt 1376 880)
 	(bus)
@@ -2134,11 +2139,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1176 1056)
 	(pt 1176 1096)
-	(bus)
-)
-(connector
-	(pt 1176 1096)
-	(pt 1120 1096)
 	(bus)
 )
 (connector
@@ -2299,6 +2299,95 @@ refer to the applicable agreement for further details.
 	(pt 552 272)
 	(pt 520 272)
 )
+(connector
+	(pt 824 288)
+	(pt 824 320)
+)
+(connector
+	(pt 824 320)
+	(pt 824 472)
+)
+(connector
+	(text "vert_sync" (rect 834 304 880 321)(font "Intel Clear" ))
+	(pt 824 320)
+	(pt 864 320)
+)
+(connector
+	(text "vert_sync" (rect 986 1256 1032 1273)(font "Intel Clear" ))
+	(pt 1016 1272)
+	(pt 976 1272)
+)
+(connector
+	(pt 800 1040)
+	(pt 1248 1040)
+	(bus)
+)
+(connector
+	(pt 1248 1040)
+	(pt 1336 1040)
+	(bus)
+)
+(connector
+	(pt 800 1040)
+	(pt 800 1232)
+	(bus)
+)
+(connector
+	(pt 800 1232)
+	(pt 1016 1232)
+	(bus)
+)
+(connector
+	(pt 1016 1232)
+	(pt 1016 1240)
+	(bus)
+)
+(connector
+	(pt 1168 1096)
+	(pt 1168 1200)
+	(bus)
+)
+(connector
+	(pt 1168 1200)
+	(pt 936 1200)
+	(bus)
+)
+(connector
+	(pt 1176 1096)
+	(pt 1168 1096)
+	(bus)
+)
+(connector
+	(pt 1168 1096)
+	(pt 1120 1096)
+	(bus)
+)
+(connector
+	(pt 936 1200)
+	(pt 936 1256)
+	(bus)
+)
+(connector
+	(pt 936 1256)
+	(pt 1016 1256)
+	(bus)
+)
+(connector
+	(pt 1224 1240)
+	(pt 1256 1240)
+	(bus)
+)
+(connector
+	(pt 1256 1240)
+	(pt 1256 1272)
+	(bus)
+)
+(connector
+	(text "speed[2..0]" (rect 1258 1256 1309 1273)(font "Intel Clear" ))
+	(pt 1256 1272)
+	(pt 1312 1272)
+	(bus)
+)
 (junction (pt 824 288))
 (junction (pt 520 128))
 (junction (pt 800 464))
@@ -2315,3 +2404,6 @@ refer to the applicable agreement for further details.
 (junction (pt 800 368))
 (junction (pt 1376 720))
 (junction (pt 240 120))
+(junction (pt 824 320))
+(junction (pt 1248 1040))
+(junction (pt 1168 1096))

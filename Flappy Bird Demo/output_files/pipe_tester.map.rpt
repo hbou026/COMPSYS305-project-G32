@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipe_tester
-Thu May 25 03:02:57 2023
+Mon May 29 01:29:46 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -18,23 +18,24 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  10. State Machine - |test_playing|MOUSE:inst2|mouse_state
  11. User-Specified and Inferred Latches
  12. Registers Removed During Synthesis
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
- 17. Source assignments for pipe_tester:inst|char_rom:inst20|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
- 18. Parameter Settings for User Entity Instance: pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i
- 19. Parameter Settings for User Entity Instance: pipe_tester:inst|height_gen:inst9|rng1:inst
- 20. Parameter Settings for User Entity Instance: pipe_tester:inst|height_gen:inst9|rng2:inst1
- 21. Parameter Settings for User Entity Instance: pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component
- 22. Parameter Settings for User Entity Instance: pipe_tester:inst|char_rom:inst20|altsyncram:altsyncram_component
- 23. Parameter Settings for User Entity Instance: pll25Mhz:inst3|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i
- 24. Parameter Settings for Inferred Entity Instance: pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Mod0
- 25. Parameter Settings for Inferred Entity Instance: pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Div0
- 26. altsyncram Parameter Settings by Entity Instance
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Inverted Register Statistics
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Source assignments for pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+ 18. Source assignments for pipe_tester:inst|char_rom:inst20|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+ 19. Parameter Settings for User Entity Instance: pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i
+ 20. Parameter Settings for User Entity Instance: pipe_tester:inst|height_gen:inst9|rng1:inst
+ 21. Parameter Settings for User Entity Instance: pipe_tester:inst|height_gen:inst9|rng2:inst1
+ 22. Parameter Settings for User Entity Instance: pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component
+ 23. Parameter Settings for User Entity Instance: pipe_tester:inst|char_rom:inst20|altsyncram:altsyncram_component
+ 24. Parameter Settings for User Entity Instance: pll25Mhz:inst3|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i
+ 25. Parameter Settings for Inferred Entity Instance: pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Mod0
+ 26. Parameter Settings for Inferred Entity Instance: pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Div0
+ 27. altsyncram Parameter Settings by Entity Instance
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
 
 
 
@@ -60,14 +61,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 25 03:02:57 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon May 29 01:29:46 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipe_tester                                 ;
 ; Top-level Entity Name           ; test_playing                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 287                                         ;
-; Total pins                      ; 14                                          ;
+; Total registers                 ; 291                                         ;
+; Total pins                      ; 11                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 8,192                                       ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -196,7 +197,6 @@ refer to the applicable agreement for further details.
 ; bouncy_ball.vhd                          ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/bouncy_ball.vhd                          ;          ;
 ; player.vhd                               ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/player.vhd                               ;          ;
 ; conc2.vhd                                ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/conc2.vhd                                ;          ;
-; 3bit_to_integer.vhd                      ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/3bit_to_integer.vhd                      ;          ;
 ; rgb_controller.vhd                       ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rgb_controller.vhd                       ;          ;
 ; rng.vhd                                  ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rng.vhd                                  ;          ;
 ; rng2.vhd                                 ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rng2.vhd                                 ;          ;
@@ -210,6 +210,7 @@ refer to the applicable agreement for further details.
 ; integrated files/clk_conv_1hz.vhd        ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd        ;          ;
 ; integrated files/mouse.vhd               ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd               ;          ;
 ; integrated files/char_rom.vhd            ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd            ;          ;
+; speed_mod.vhd                            ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd                            ;          ;
 ; altera_pll.v                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                                              ;          ;
 ; altsyncram.tdf                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                            ;          ;
 ; stratix_ram_block.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                     ;          ;
@@ -239,18 +240,18 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                              ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 425                                                                                                ;
+; Estimate of Logic utilization (ALMs needed) ; 436                                                                                                ;
 ;                                             ;                                                                                                    ;
-; Combinational ALUT usage for logic          ; 717                                                                                                ;
+; Combinational ALUT usage for logic          ; 733                                                                                                ;
 ;     -- 7 input functions                    ; 10                                                                                                 ;
-;     -- 6 input functions                    ; 115                                                                                                ;
-;     -- 5 input functions                    ; 91                                                                                                 ;
-;     -- 4 input functions                    ; 78                                                                                                 ;
-;     -- <=3 input functions                  ; 423                                                                                                ;
+;     -- 6 input functions                    ; 121                                                                                                ;
+;     -- 5 input functions                    ; 98                                                                                                 ;
+;     -- 4 input functions                    ; 80                                                                                                 ;
+;     -- <=3 input functions                  ; 424                                                                                                ;
 ;                                             ;                                                                                                    ;
-; Dedicated logic registers                   ; 287                                                                                                ;
+; Dedicated logic registers                   ; 291                                                                                                ;
 ;                                             ;                                                                                                    ;
-; I/O pins                                    ; 14                                                                                                 ;
+; I/O pins                                    ; 11                                                                                                 ;
 ; Total MLAB memory bits                      ; 0                                                                                                  ;
 ; Total block memory bits                     ; 8192                                                                                               ;
 ;                                             ;                                                                                                    ;
@@ -261,8 +262,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                                                                    ;
 ; Maximum fan-out node                        ; pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 131                                                                                                ;
-; Total fan-out                               ; 3556                                                                                               ;
-; Average fan-out                             ; 3.38                                                                                               ;
+; Total fan-out                               ; 3652                                                                                               ;
+; Average fan-out                             ; 3.43                                                                                               ;
 +---------------------------------------------+----------------------------------------------------------------------------------------------------+
 
 
@@ -271,9 +272,9 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |test_playing                                ; 717 (0)             ; 287 (0)                   ; 8192              ; 0          ; 14   ; 0            ; |test_playing                                                                                                                                      ; test_playing        ; work         ;
+; |test_playing                                ; 733 (0)             ; 291 (0)                   ; 8192              ; 0          ; 11   ; 0            ; |test_playing                                                                                                                                      ; test_playing        ; work         ;
 ;    |MOUSE:inst2|                             ; 50 (50)             ; 63 (63)                   ; 0                 ; 0          ; 0    ; 0            ; |test_playing|MOUSE:inst2                                                                                                                          ; MOUSE               ; work         ;
-;    |pipe_tester:inst|                        ; 667 (8)             ; 224 (0)                   ; 8192              ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst                                                                                                                     ; pipe_tester         ; work         ;
+;    |pipe_tester:inst|                        ; 683 (8)             ; 228 (0)                   ; 8192              ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst                                                                                                                     ; pipe_tester         ; work         ;
 ;       |VGA_SYNC:inst|                        ; 40 (40)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|VGA_SYNC:inst                                                                                                       ; VGA_SYNC            ; work         ;
 ;       |bouncy_ball:inst5|                    ; 73 (73)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|bouncy_ball:inst5                                                                                                   ; bouncy_ball         ; work         ;
 ;       |bouncy_ball:inst8|                    ; 102 (102)           ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|bouncy_ball:inst8                                                                                                   ; bouncy_ball         ; work         ;
@@ -289,10 +290,11 @@ refer to the applicable agreement for further details.
 ;       |height_gen:inst9|                     ; 14 (0)              ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|height_gen:inst9                                                                                                    ; height_gen          ; work         ;
 ;          |rng1:inst|                         ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|height_gen:inst9|rng1:inst                                                                                          ; rng1                ; work         ;
 ;          |rng2:inst1|                        ; 6 (6)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|height_gen:inst9|rng2:inst1                                                                                         ; rng2                ; work         ;
-;       |player:inst6|                         ; 73 (73)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|player:inst6                                                                                                        ; player              ; work         ;
+;       |player:inst6|                         ; 74 (74)             ; 25 (25)                   ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|player:inst6                                                                                                        ; player              ; work         ;
 ;       |pll25Mhz:inst1|                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|pll25Mhz:inst1                                                                                                      ; pll25Mhz            ; pll25mhz     ;
 ;          |pll25Mhz_0002:pll25mhz_inst|       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst                                                                          ; pll25Mhz_0002       ; pll25Mhz     ;
 ;             |altera_pll:altera_pll_i|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i                                                  ; altera_pll          ; work         ;
+;       |speed_mod:inst16|                     ; 15 (15)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|speed_mod:inst16                                                                                                    ; speed_mod           ; work         ;
 ;       |temp_score_gen:inst17|                ; 18 (18)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|temp_score_gen:inst17                                                                                               ; temp_score_gen      ; work         ;
 ;       |text_pos_gen:inst15|                  ; 188 (75)            ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|text_pos_gen:inst15                                                                                                 ; text_pos_gen        ; work         ;
 ;          |lpm_divide:Div0|                   ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |test_playing|pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
@@ -363,6 +365,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------------+-----------------------------------------------------------------+
 ; Register name                                          ; Reason for Removal                                              ;
 +--------------------------------------------------------+-----------------------------------------------------------------+
+; pipe_tester:inst|bouncy_ball:inst5|prev_enable         ; Stuck at VCC due to stuck port data_in                          ;
+; pipe_tester:inst|bouncy_ball:inst8|prev_enable         ; Stuck at VCC due to stuck port data_in                          ;
 ; MOUSE:inst2|CHAROUT[4..7]                              ; Stuck at VCC due to stuck port data_in                          ;
 ; MOUSE:inst2|CHAROUT[3]                                 ; Stuck at GND due to stuck port data_in                          ;
 ; MOUSE:inst2|CHAROUT[2]                                 ; Stuck at VCC due to stuck port data_in                          ;
@@ -378,8 +382,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; pipe_tester:inst|bouncy_ball:inst5|ball_x_motion[4..9] ; Merged with pipe_tester:inst|bouncy_ball:inst5|ball_x_motion[3] ;
 ; pipe_tester:inst|player:inst6|ball_y_motion[5..9]      ; Merged with pipe_tester:inst|player:inst6|ball_y_motion[4]      ;
 ; pipe_tester:inst|VGA_SYNC:inst|pixel_row[9]            ; Stuck at GND due to stuck port data_in                          ;
-; Total Number of Removed Registers = 33                 ;                                                                 ;
+; Total Number of Removed Registers = 35                 ;                                                                 ;
 +--------------------------------------------------------+-----------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                    ;
++------------------------------------------------+---------------------------+---------------------------------------------------+
+; Register name                                  ; Reason for Removal        ; Registers Removed due to This Register            ;
++------------------------------------------------+---------------------------+---------------------------------------------------+
+; pipe_tester:inst|bouncy_ball:inst5|prev_enable ; Stuck at VCC              ; pipe_tester:inst|bouncy_ball:inst5|ball_y_pos[0], ;
+;                                                ; due to stuck port data_in ; pipe_tester:inst|bouncy_ball:inst5|ball_y_pos[4], ;
+;                                                ;                           ; pipe_tester:inst|bouncy_ball:inst5|ball_y_pos[9]  ;
+; pipe_tester:inst|bouncy_ball:inst8|prev_enable ; Stuck at VCC              ; pipe_tester:inst|bouncy_ball:inst8|ball_y_pos[0], ;
+;                                                ; due to stuck port data_in ; pipe_tester:inst|bouncy_ball:inst8|ball_y_pos[4], ;
+;                                                ;                           ; pipe_tester:inst|bouncy_ball:inst8|ball_y_pos[9]  ;
++------------------------------------------------+---------------------------+---------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -387,12 +405,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 287   ;
-; Number of registers using Synchronous Clear  ; 81    ;
+; Total registers                              ; 291   ;
+; Number of registers using Synchronous Clear  ; 91    ;
 ; Number of registers using Synchronous Load   ; 20    ;
 ; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 165   ;
+; Number of registers using Clock Enable       ; 166   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -427,15 +445,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |test_playing|pipe_tester:inst|VGA_SYNC:inst|v_count[2]                    ;
-; 3:1                ; 29 bits   ; 58 LEs        ; 0 LEs                ; 58 LEs                 ; Yes        ; |test_playing|pipe_tester:inst|collision_detection:inst14|t_life_point[16] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|player:inst6|ball_y_motion[1]               ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |test_playing|pipe_tester:inst|VGA_SYNC:inst|v_count[8]                    ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 0 LEs                ; 58 LEs                 ; Yes        ; |test_playing|pipe_tester:inst|collision_detection:inst14|t_life_point[15] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|player:inst6|ball_y_motion[0]               ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|player:inst6|ball_y_motion[2]               ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|player:inst6|gravity_timer[3]               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|player:inst6|gravity_timer[1]               ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|controller:inst4|green                      ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|player:inst6|move_step_int[0]               ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|player:inst6|move_step_int[4]               ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|collision_detection:inst14|t_life_point[1]  ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|player:inst6|move_step_int[3]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |test_playing|pipe_tester:inst|collision_detection:inst14|t_life_point[2]  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
 
@@ -1175,17 +1193,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 287                         ;
+; arriav_ff             ; 291                         ;
 ;     CLR               ; 17                          ;
-;     ENA               ; 99                          ;
+;     ENA               ; 90                          ;
 ;     ENA CLR           ; 15                          ;
-;     ENA SCLR          ; 39                          ;
+;     ENA SCLR          ; 49                          ;
 ;     ENA SLD           ; 12                          ;
 ;     SCLR              ; 42                          ;
 ;     SLD               ; 8                           ;
-;     plain             ; 55                          ;
+;     plain             ; 58                          ;
 ; arriav_io_obuf        ; 2                           ;
-; arriav_lcell_comb     ; 717                         ;
+; arriav_lcell_comb     ; 733                         ;
 ;     arith             ; 284                         ;
 ;         0 data inputs ; 23                          ;
 ;         1 data inputs ; 176                         ;
@@ -1194,22 +1212,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 10                          ;
 ;     extend            ; 10                          ;
 ;         7 data inputs ; 10                          ;
-;     normal            ; 413                         ;
+;     normal            ; 429                         ;
 ;         1 data inputs ; 23                          ;
-;         2 data inputs ; 53                          ;
+;         2 data inputs ; 54                          ;
 ;         3 data inputs ; 63                          ;
-;         4 data inputs ; 68                          ;
-;         5 data inputs ; 91                          ;
-;         6 data inputs ; 115                         ;
+;         4 data inputs ; 70                          ;
+;         5 data inputs ; 98                          ;
+;         6 data inputs ; 121                         ;
 ;     shared            ; 10                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 8                           ;
-; boundary_port         ; 14                          ;
+; boundary_port         ; 11                          ;
 ; generic_pll           ; 2                           ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.50                       ;
-; Average LUT depth     ; 4.27                        ;
+; Average LUT depth     ; 4.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1218,7 +1236,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1228,7 +1246,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 25 03:02:40 2023
+    Info: Processing started: Mon May 29 01:29:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipe_tester -c pipe_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1306,8 +1324,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file integra
 Info (12021): Found 2 design units, including 1 entities, in source file speed_calc.vhd
     Info (12022): Found design unit 1: speed_calc-beh File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_calc.vhd Line: 11
     Info (12023): Found entity 1: speed_calc File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_calc.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file speed_mod.vhd
+    Info (12022): Found design unit 1: speed_mod-behaviour File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd Line: 17
+    Info (12023): Found entity 1: speed_mod File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd Line: 10
 Info (12127): Elaborating entity "test_playing" for the top level hierarchy
-Warning (275089): Not all bits in bus "SW[8..0]" are used
 Info (12128): Elaborating entity "pipe_tester" for hierarchy "pipe_tester:inst"
 Warning (275008): Primitive "OR2" of instance "inst10" not used
 Warning (275008): Primitive "OR2" of instance "inst11" not used
@@ -1388,11 +1408,14 @@ Info (10041): Inferred latch for "status[0]" at controller.vhd(21) File: C:/User
 Info (10041): Inferred latch for "status[1]" at controller.vhd(21) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
 Info (12128): Elaborating entity "player" for hierarchy "pipe_tester:inst|player:inst6"
 Info (12128): Elaborating entity "bouncy_ball" for hierarchy "pipe_tester:inst|bouncy_ball:inst8"
-Warning (10492): VHDL Process Statement warning at bouncy_ball.vhd(51): signal "next_enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/bouncy_ball.vhd Line: 51
 Info (12128): Elaborating entity "height_gen" for hierarchy "pipe_tester:inst|height_gen:inst9"
 Info (12128): Elaborating entity "conc2" for hierarchy "pipe_tester:inst|height_gen:inst9|conc2:inst2"
 Info (12128): Elaborating entity "rng1" for hierarchy "pipe_tester:inst|height_gen:inst9|rng1:inst"
 Info (12128): Elaborating entity "rng2" for hierarchy "pipe_tester:inst|height_gen:inst9|rng2:inst1"
+Info (12128): Elaborating entity "speed_mod" for hierarchy "pipe_tester:inst|speed_mod:inst16"
+Info (12128): Elaborating entity "temp_score_gen" for hierarchy "pipe_tester:inst|temp_score_gen:inst17"
+Info (12128): Elaborating entity "clk_conv_1hz" for hierarchy "pipe_tester:inst|clk_conv_1hz:inst19"
+Warning (10492): VHDL Process Statement warning at clk_conv_1hz.vhd(29): signal "v_clk_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd Line: 29
 Info (12128): Elaborating entity "char_rom" for hierarchy "pipe_tester:inst|char_rom:inst23"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 51
 Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 51
@@ -1417,9 +1440,6 @@ Info (12128): Elaborating entity "altsyncram_d5g1" for hierarchy "pipe_tester:in
 Info (12128): Elaborating entity "welcome_text" for hierarchy "pipe_tester:inst|welcome_text:inst21"
 Info (12128): Elaborating entity "text_pos_gen" for hierarchy "pipe_tester:inst|text_pos_gen:inst15"
 Info (12128): Elaborating entity "collision_detection" for hierarchy "pipe_tester:inst|collision_detection:inst14"
-Info (12128): Elaborating entity "temp_score_gen" for hierarchy "pipe_tester:inst|temp_score_gen:inst17"
-Info (12128): Elaborating entity "clk_conv_1hz" for hierarchy "pipe_tester:inst|clk_conv_1hz:inst19"
-Warning (10492): VHDL Process Statement warning at clk_conv_1hz.vhd(29): signal "v_clk_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd Line: 29
 Info (12128): Elaborating entity "rgb_controller" for hierarchy "pipe_tester:inst|rgb_controller:inst22"
 Info (12128): Elaborating entity "MOUSE" for hierarchy "MOUSE:inst2"
 Warning (10036): Verilog HDL or VHDL warning at mouse.vhd(25): object "CHARIN" assigned a value but never read File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 25
@@ -1427,7 +1447,6 @@ Warning (10492): VHDL Process Statement warning at mouse.vhd(151): signal "CHARO
 Warning (10492): VHDL Process Statement warning at mouse.vhd(155): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 155
 Warning (10492): VHDL Process Statement warning at mouse.vhd(156): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 156
 Warning (10492): VHDL Process Statement warning at mouse.vhd(157): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 157
-Info (12128): Elaborating entity "three_bit_to_integer" for hierarchy "three_bit_to_integer:inst1"
 Info (278001): Inferred 2 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipe_tester:inst|text_pos_gen:inst15|Mod0" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 156
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipe_tester:inst|text_pos_gen:inst15|Div0" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 155
@@ -1489,16 +1508,16 @@ Warning: RST port on the PLL is not properly connected on instance pipe_tester:i
     Info: Must be connected
 Warning: RST port on the PLL is not properly connected on instance pll25Mhz:inst3|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Info (21057): Implemented 819 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
+Info (21057): Implemented 833 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
     Info (21059): Implemented 5 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 787 logic cells
+    Info (21061): Implemented 804 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 2 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 42 warnings
-    Info: Peak virtual memory: 4879 megabytes
-    Info: Processing ended: Thu May 25 03:02:57 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4876 megabytes
+    Info: Processing ended: Mon May 29 01:29:46 2023
     Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:33
 

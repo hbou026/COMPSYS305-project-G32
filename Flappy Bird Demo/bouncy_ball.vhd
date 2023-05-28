@@ -25,6 +25,7 @@ SIGNAL ball_y_pos				: std_logic_vector(9 DOWNTO 0);
 SiGNAL ball_x_pos				: std_logic_vector(10 DOWNTO 0);
 SIGNAL ball_x_motion			: std_logic_vector(9 DOWNTO 0);
 SIGNAL set_speed				: integer range 0 to 7;
+signal prev_enable 			: std_logic;
 
 BEGIN           
 
@@ -45,7 +46,7 @@ Green <= (ball_on);
 Blue <= (not next_enable) and (not ball_on);
 
 
-Move_Ball: process (vert_sync, height)  	
+Move_Ball: process (vert_sync, height, next_enable)  	
 begin
 	-- Move ball once every vertical sync
 	if (rising_edge(vert_sync) and next_enable = '1') then			
@@ -53,7 +54,7 @@ begin
 	
 	
 		-- Compute next ball X position
-		if (ball_x_pos <= (size - 26)) then
+		if (ball_x_pos <= (size - 26) OR (next_enable = '1' and prev_enable = '0')) then
 			ball_x_pos <= ball_x_pos + CONV_STD_LOGIC_VECTOR(639,11);
 			
 			-- Determine Height of the pipe based on 4 different inputs, change when it wraps back around
@@ -75,14 +76,7 @@ begin
 		-- determine speed of pipe based on input
 		ball_x_motion <= - CONV_STD_LOGIC_VECTOR(speed,10);
 		
-		-- Find x pos to START next pipe
-	--	if (ball_x_pos <= CONV_STD_LOGIC_VECTOR(479, 10) and next_enable = '1') then
-	--		next_pipe <= '1';
-	--	end if;
-		
-	--	if (next_enable = '0') then
-		--	next_pipe <= '0';
-	--	end if;
+		prev_enable <= next_enable;
 		
 	end if;
 end process Move_Ball;
