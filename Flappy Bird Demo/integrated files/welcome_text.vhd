@@ -35,12 +35,12 @@ character_address <= cha_add;
 		  count_row := CONV_INTEGER(pixel_row);
 
         IF (pixel_row >= CONV_STD_LOGIC_VECTOR(100, 10) AND pixel_row <= CONV_STD_LOGIC_VECTOR(135, 10)) THEN
-            f_row <= conv_std_logic_vector(conv_integer(pixel_row(3 DOWNTO 1)) + 5, 3);
+            f_row <= conv_std_logic_vector(conv_integer(pixel_row(3 DOWNTO 1)) + 6, 3);
         ELSE
             f_row <= "111";
         END IF;
 
-        IF (pixel_col >= CONV_STD_LOGIC_VECTOR(152, 10) AND pixel_col <= CONV_STD_LOGIC_VECTOR(503, 10)) THEN
+        IF (pixel_col >= CONV_STD_LOGIC_VECTOR(160, 10) AND pixel_col <= CONV_STD_LOGIC_VECTOR(495, 10)) THEN
             f_col <= pixel_col(3 DOWNTO 1);
         ELSE
             f_col <= "000";
@@ -51,45 +51,45 @@ character_address <= cha_add;
 			WHEN 100 TO 119 =>
 				--display text "BOUNCY BALL!";
 				CASE count_col IS
-					WHEN 216 TO 231 => count := 2;
-					WHEN 232 TO 247 => count := 15;
-					WHEN 248 TO 263 => count := 21;
-					WHEN 264 TO 279 => count := 14;
-					WHEN 280 TO 295 => count := 3;
-					WHEN 296 TO 311 => count := 25;
-					WHEN 312 TO 327 => count := 32;
-					WHEN 328 TO 343 => count := 2;
-					WHEN 344 TO 375 => count := 1;
-					WHEN 376 TO 391 => count := 12;
-					WHEN 392 TO 407 => count := 12;
-					WHEN 408 TO 423 => count := 33;
+					WHEN 224 TO 239 => count := 2;
+					WHEN 240 TO 255 => count := 15;
+					WHEN 256 TO 271 => count := 21;
+					WHEN 272 TO 287 => count := 14;
+					WHEN 288 TO 303 => count := 3;
+					WHEN 304 TO 319 => count := 25;
+					WHEN 320 TO 335 => count := 32;
+					WHEN 336 TO 351 => count := 2;
+					WHEN 352 TO 367 => count := 1;
+					WHEN 368 TO 383 => count := 12;
+					WHEN 384 TO 399 => count := 12;
+					WHEN 400 TO 415 => count := 33;
 					WHEN OTHERS => count := 32;
 				END CASE;
 				
 			WHEN 120 TO 135 =>
 				--display text "PRESS BUTTON TO START";
 				CASE count_col IS
-					WHEN 152 TO 167 => count := 16; --P
-					WHEN 168 TO 183 => count := 18; --R
-					WHEN 184 TO 199 => count := 5;  --E
-					WHEN 200 TO 215 => count := 19; --S
-					WHEN 216 TO 231 => count := 19; --S
-					WHEN 232 TO 247 => count := 32; --(space)
-					WHEN 248 TO 263 => count := 2;  --B
-					WHEN 264 TO 279 => count := 21; --U
-					WHEN 280 TO 295 => count := 20; --T
-					WHEN 296 TO 311 => count := 20; --T
-					WHEN 312 TO 327 => count := 15; --O
-					WHEN 328 TO 343 => count := 14; --N
-					WHEN 344 TO 375 => count := 32; --(space)
-					WHEN 376 TO 391 => count := 20; --T
-					WHEN 392 TO 407 => count := 15; --O
-					WHEN 408 TO 423 => count := 32; --(space)
-					WHEN 424 TO 439 => count := 19; --S
-					WHEN 440 TO 455 => count := 20; --T
-					WHEN 456 TO 471 => count := 1;  --A
-					WHEN 472 TO 487 => count := 18; --R
-					WHEN 488 TO 503 => count := 20; --T
+					WHEN 160 TO 175 => count := 16; --P
+					WHEN 176 TO 191 => count := 18; --R
+					WHEN 192 TO 207 => count := 5;  --E
+					WHEN 208 TO 223 => count := 19; --S
+					WHEN 224 TO 239 => count := 19; --S
+					WHEN 240 TO 255 => count := 32; --(space)
+					WHEN 256 TO 271 => count := 2;  --B
+					WHEN 272 TO 287 => count := 21; --U
+					WHEN 288 TO 303 => count := 20; --T
+					WHEN 304 TO 319 => count := 20; --T
+					WHEN 320 TO 335 => count := 15; --O
+					WHEN 336 TO 351 => count := 14; --N
+					WHEN 352 TO 367 => count := 32; --(space)
+					WHEN 368 TO 383 => count := 20; --T
+					WHEN 384 TO 399 => count := 15; --O
+					WHEN 400 TO 415 => count := 32; --(space)
+					WHEN 416 TO 431 => count := 19; --S
+					WHEN 432 TO 447 => count := 20; --T
+					WHEN 448 TO 463 => count := 1;  --A
+					WHEN 464 TO 479 => count := 18; --R
+					WHEN 480 TO 495 => count := 20; --T
 					WHEN OTHERS => count := 32;
 				END CASE;
 				

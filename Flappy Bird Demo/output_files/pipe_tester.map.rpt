@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipe_tester
-Mon May 29 01:29:46 2023
+Mon May 29 19:14:44 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon May 29 01:29:46 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon May 29 19:14:44 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipe_tester                                 ;
 ; Top-level Entity Name           ; test_playing                                ;
@@ -173,66 +173,67 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processors 3-14        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
-+------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+
-; File Name with User-Entered Path         ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                     ; Library  ;
-+------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+
-; Vga_sync.vhd                             ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/Vga_sync.vhd                             ;          ;
-; pll25Mhz.vhd                             ; yes             ; User Wizard-Generated File             ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz.vhd                             ; pll25Mhz ;
-; pll25Mhz/pll25Mhz_0002.v                 ; yes             ; User Verilog HDL File                  ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v                 ; pll25Mhz ;
-; pipe_tester.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pipe_tester.bdf                          ;          ;
-; bouncy_ball.vhd                          ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/bouncy_ball.vhd                          ;          ;
-; player.vhd                               ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/player.vhd                               ;          ;
-; conc2.vhd                                ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/conc2.vhd                                ;          ;
-; rgb_controller.vhd                       ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rgb_controller.vhd                       ;          ;
-; rng.vhd                                  ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rng.vhd                                  ;          ;
-; rng2.vhd                                 ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rng2.vhd                                 ;          ;
-; height_gen.bdf                           ; yes             ; User Block Diagram/Schematic File      ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/height_gen.bdf                           ;          ;
-; test_playing.bdf                         ; yes             ; User Block Diagram/Schematic File      ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/test_playing.bdf                         ;          ;
-; integrated files/temp_score_gen.vhd      ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/temp_score_gen.vhd      ;          ;
-; integrated files/collision_detection.vhd ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/collision_detection.vhd ;          ;
-; integrated files/controller.vhd          ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd          ;          ;
-; integrated files/text_pos_gen.vhd        ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd        ;          ;
-; integrated files/welcome_text.vhd        ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/welcome_text.vhd        ;          ;
-; integrated files/clk_conv_1hz.vhd        ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd        ;          ;
-; integrated files/mouse.vhd               ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd               ;          ;
-; integrated files/char_rom.vhd            ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd            ;          ;
-; speed_mod.vhd                            ; yes             ; User VHDL File                         ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd                            ;          ;
-; altera_pll.v                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                                              ;          ;
-; altsyncram.tdf                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                            ;          ;
-; stratix_ram_block.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                     ;          ;
-; lpm_mux.inc                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                               ;          ;
-; lpm_decode.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                            ;          ;
-; aglobal181.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                            ;          ;
-; a_rdenreg.inc                            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                             ;          ;
-; altrom.inc                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                ;          ;
-; altram.inc                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                ;          ;
-; altdpram.inc                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                              ;          ;
-; db/altsyncram_d5g1.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/altsyncram_d5g1.tdf                   ;          ;
-; tcgrom.mif                               ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/tcgrom.mif                               ;          ;
-; lpm_divide.tdf                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                            ;          ;
-; abs_divider.inc                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                           ;          ;
-; sign_div_unsign.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                       ;          ;
-; db/lpm_divide_c2m.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/lpm_divide_c2m.tdf                    ;          ;
-; db/sign_div_unsign_fkh.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/sign_div_unsign_fkh.tdf               ;          ;
-; db/alt_u_div_4te.tdf                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/alt_u_div_4te.tdf                     ;          ;
-; db/lpm_divide_5am.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/lpm_divide_5am.tdf                    ;          ;
-; db/sign_div_unsign_bkh.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/sign_div_unsign_bkh.tdf               ;          ;
-; db/alt_u_div_sse.tdf                     ; yes             ; Auto-Generated Megafunction            ; C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/alt_u_div_sse.tdf                     ;          ;
-+------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
++------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+----------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                   ; Library  ;
++------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+----------+
+; Vga_sync.vhd                             ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/Vga_sync.vhd                             ;          ;
+; pll25Mhz.vhd                             ; yes             ; User Wizard-Generated File             ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz.vhd                             ; pll25Mhz ;
+; pll25Mhz/pll25Mhz_0002.v                 ; yes             ; User Verilog HDL File                  ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v                 ; pll25Mhz ;
+; pipe_tester.bdf                          ; yes             ; User Block Diagram/Schematic File      ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pipe_tester.bdf                          ;          ;
+; bouncy_ball.vhd                          ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/bouncy_ball.vhd                          ;          ;
+; player.vhd                               ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/player.vhd                               ;          ;
+; conc2.vhd                                ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/conc2.vhd                                ;          ;
+; rgb_controller.vhd                       ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rgb_controller.vhd                       ;          ;
+; rng.vhd                                  ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rng.vhd                                  ;          ;
+; rng2.vhd                                 ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rng2.vhd                                 ;          ;
+; height_gen.bdf                           ; yes             ; User Block Diagram/Schematic File      ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/height_gen.bdf                           ;          ;
+; test_playing.bdf                         ; yes             ; User Block Diagram/Schematic File      ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/test_playing.bdf                         ;          ;
+; integrated files/temp_score_gen.vhd      ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/temp_score_gen.vhd      ;          ;
+; integrated files/collision_detection.vhd ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/collision_detection.vhd ;          ;
+; integrated files/controller.vhd          ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd          ;          ;
+; integrated files/text_pos_gen.vhd        ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd        ;          ;
+; integrated files/welcome_text.vhd        ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/welcome_text.vhd        ;          ;
+; integrated files/clk_conv_1hz.vhd        ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd        ;          ;
+; integrated files/mouse.vhd               ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd               ;          ;
+; integrated files/char_rom.vhd            ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd            ;          ;
+; speed_mod.vhd                            ; yes             ; User VHDL File                         ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd                            ;          ;
+; altera_pll.v                             ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altera_pll.v                                           ;          ;
+; altsyncram.tdf                           ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altsyncram.tdf                                         ;          ;
+; stratix_ram_block.inc                    ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                  ;          ;
+; lpm_mux.inc                              ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/lpm_mux.inc                                            ;          ;
+; lpm_decode.inc                           ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/lpm_decode.inc                                         ;          ;
+; aglobal181.inc                           ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/aglobal181.inc                                         ;          ;
+; a_rdenreg.inc                            ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                          ;          ;
+; altrom.inc                               ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altrom.inc                                             ;          ;
+; altram.inc                               ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altram.inc                                             ;          ;
+; altdpram.inc                             ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altdpram.inc                                           ;          ;
+; db/altsyncram_d5g1.tdf                   ; yes             ; Auto-Generated Megafunction            ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/altsyncram_d5g1.tdf                   ;          ;
+; tcgrom.mif                               ; yes             ; Auto-Found Memory Initialization File  ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/tcgrom.mif                               ;          ;
+; lpm_divide.tdf                           ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                         ;          ;
+; abs_divider.inc                          ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/abs_divider.inc                                        ;          ;
+; sign_div_unsign.inc                      ; yes             ; Megafunction                           ; d:/quartus/quartus_18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                    ;          ;
+; db/lpm_divide_c2m.tdf                    ; yes             ; Auto-Generated Megafunction            ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/lpm_divide_c2m.tdf                    ;          ;
+; db/sign_div_unsign_fkh.tdf               ; yes             ; Auto-Generated Megafunction            ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/sign_div_unsign_fkh.tdf               ;          ;
+; db/alt_u_div_4te.tdf                     ; yes             ; Auto-Generated Megafunction            ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/alt_u_div_4te.tdf                     ;          ;
+; db/lpm_divide_5am.tdf                    ; yes             ; Auto-Generated Megafunction            ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/lpm_divide_5am.tdf                    ;          ;
+; db/sign_div_unsign_bkh.tdf               ; yes             ; Auto-Generated Megafunction            ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/sign_div_unsign_bkh.tdf               ;          ;
+; db/alt_u_div_sse.tdf                     ; yes             ; Auto-Generated Megafunction            ; E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/alt_u_div_sse.tdf                     ;          ;
++------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+----------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1236,7 +1237,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1246,87 +1247,87 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon May 29 01:29:29 2023
+    Info: Processing started: Mon May 29 19:14:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipe_tester -c pipe_tester
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file vga_sync.vhd
-    Info (12022): Found design unit 1: VGA_SYNC-a File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/Vga_sync.vhd Line: 13
-    Info (12023): Found entity 1: VGA_SYNC File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/Vga_sync.vhd Line: 7
+    Info (12022): Found design unit 1: VGA_SYNC-a File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/Vga_sync.vhd Line: 13
+    Info (12023): Found entity 1: VGA_SYNC File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/Vga_sync.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file piping.vhd
-    Info (12022): Found design unit 1: pipes-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/piping.vhd Line: 15
-    Info (12023): Found entity 1: pipes File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/piping.vhd Line: 7
+    Info (12022): Found design unit 1: pipes-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/piping.vhd Line: 15
+    Info (12023): Found entity 1: pipes File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/piping.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pll25mhz.vhd
-    Info (12022): Found design unit 1: pll25Mhz-rtl File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz.vhd Line: 20
-    Info (12023): Found entity 1: pll25Mhz File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz.vhd Line: 11
+    Info (12022): Found design unit 1: pll25Mhz-rtl File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz.vhd Line: 20
+    Info (12023): Found entity 1: pll25Mhz File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file pll25mhz/pll25mhz_0002.v
-    Info (12023): Found entity 1: pll25Mhz_0002 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v Line: 2
+    Info (12023): Found entity 1: pll25Mhz_0002 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file pipe_tester.bdf
     Info (12023): Found entity 1: pipe_tester
 Info (12021): Found 2 design units, including 1 entities, in source file bouncy_ball.vhd
-    Info (12022): Found design unit 1: bouncy_ball-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/bouncy_ball.vhd Line: 20
-    Info (12023): Found entity 1: bouncy_ball File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/bouncy_ball.vhd Line: 8
+    Info (12022): Found design unit 1: bouncy_ball-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/bouncy_ball.vhd Line: 20
+    Info (12023): Found entity 1: bouncy_ball File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/bouncy_ball.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file player.vhd
-    Info (12022): Found design unit 1: player-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/player.vhd Line: 16
-    Info (12023): Found entity 1: player File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/player.vhd Line: 7
+    Info (12022): Found design unit 1: player-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/player.vhd Line: 16
+    Info (12023): Found entity 1: player File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/player.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file conc2.vhd
-    Info (12022): Found design unit 1: conc2-b1 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/conc2.vhd Line: 11
-    Info (12023): Found entity 1: conc2 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/conc2.vhd Line: 6
+    Info (12022): Found design unit 1: conc2-b1 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/conc2.vhd Line: 11
+    Info (12023): Found entity 1: conc2 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/conc2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file 3bit_to_integer.vhd
-    Info (12022): Found design unit 1: three_bit_to_integer-beh File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/3bit_to_integer.vhd Line: 10
-    Info (12023): Found entity 1: three_bit_to_integer File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/3bit_to_integer.vhd Line: 5
+    Info (12022): Found design unit 1: three_bit_to_integer-beh File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/3bit_to_integer.vhd Line: 10
+    Info (12023): Found entity 1: three_bit_to_integer File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/3bit_to_integer.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rgb_controller.vhd
-    Info (12022): Found design unit 1: rgb_controller-beh File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rgb_controller.vhd Line: 11
-    Info (12023): Found entity 1: rgb_controller File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rgb_controller.vhd Line: 6
+    Info (12022): Found design unit 1: rgb_controller-beh File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rgb_controller.vhd Line: 11
+    Info (12023): Found entity 1: rgb_controller File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rgb_controller.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file height_generator.vhd
-    Info (12022): Found design unit 1: height_generator-behaviour File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/height_generator.vhd Line: 15
-    Info (12023): Found entity 1: height_generator File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/height_generator.vhd Line: 10
+    Info (12022): Found design unit 1: height_generator-behaviour File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/height_generator.vhd Line: 15
+    Info (12023): Found entity 1: height_generator File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/height_generator.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file score_counter.vhd
-    Info (12022): Found design unit 1: score_counter-behaviour File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/score_counter.vhd Line: 16
-    Info (12023): Found entity 1: score_counter File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/score_counter.vhd Line: 10
+    Info (12022): Found design unit 1: score_counter-behaviour File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/score_counter.vhd Line: 16
+    Info (12023): Found entity 1: score_counter File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/score_counter.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file rng.vhd
-    Info (12022): Found design unit 1: rng1-behavioral File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rng.vhd Line: 17
-    Info (12023): Found entity 1: rng1 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rng.vhd Line: 6
+    Info (12022): Found design unit 1: rng1-behavioral File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rng.vhd Line: 17
+    Info (12023): Found entity 1: rng1 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rng.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file rng2.vhd
-    Info (12022): Found design unit 1: rng2-behavioral File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rng2.vhd Line: 17
-    Info (12023): Found entity 1: rng2 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/rng2.vhd Line: 6
+    Info (12022): Found design unit 1: rng2-behavioral File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rng2.vhd Line: 17
+    Info (12023): Found entity 1: rng2 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/rng2.vhd Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file height_gen.bdf
     Info (12023): Found entity 1: height_gen
 Info (12021): Found 1 design units, including 1 entities, in source file test_playing.bdf
     Info (12023): Found entity 1: test_playing
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/temp_score_gen.vhd
-    Info (12022): Found design unit 1: temp_score_gen-behav File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/temp_score_gen.vhd Line: 12
-    Info (12023): Found entity 1: temp_score_gen File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/temp_score_gen.vhd Line: 5
+    Info (12022): Found design unit 1: temp_score_gen-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/temp_score_gen.vhd Line: 12
+    Info (12023): Found entity 1: temp_score_gen File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/temp_score_gen.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/collision_detection.vhd
-    Info (12022): Found design unit 1: collision_detection-behav File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/collision_detection.vhd Line: 15
-    Info (12023): Found entity 1: collision_detection File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/collision_detection.vhd Line: 6
+    Info (12022): Found design unit 1: collision_detection-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/collision_detection.vhd Line: 15
+    Info (12023): Found entity 1: collision_detection File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/collision_detection.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/controller.vhd
-    Info (12022): Found design unit 1: controller-behav File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 13
-    Info (12023): Found entity 1: controller File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 6
+    Info (12022): Found design unit 1: controller-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 13
+    Info (12023): Found entity 1: controller File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/rgb_process.vhd
-    Info (12022): Found design unit 1: rgb_process-behav File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/rgb_process.vhd Line: 14
-    Info (12023): Found entity 1: rgb_process File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/rgb_process.vhd Line: 6
+    Info (12022): Found design unit 1: rgb_process-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/rgb_process.vhd Line: 14
+    Info (12023): Found entity 1: rgb_process File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/rgb_process.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/text_pos_gen.vhd
-    Info (12022): Found design unit 1: text_pos_gen-behav File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 19
-    Info (12023): Found entity 1: text_pos_gen File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 6
+    Info (12022): Found design unit 1: text_pos_gen-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 19
+    Info (12023): Found entity 1: text_pos_gen File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/welcome_text.vhd
-    Info (12022): Found design unit 1: welcome_text-behav File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/welcome_text.vhd Line: 16
-    Info (12023): Found entity 1: welcome_text File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/welcome_text.vhd Line: 6
+    Info (12022): Found design unit 1: welcome_text-behav File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/welcome_text.vhd Line: 16
+    Info (12023): Found entity 1: welcome_text File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/welcome_text.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/clk_conv_1hz.vhd
-    Info (12022): Found design unit 1: clk_conv_1hz-behaviour File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd Line: 14
-    Info (12023): Found entity 1: clk_conv_1hz File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd Line: 9
+    Info (12022): Found design unit 1: clk_conv_1hz-behaviour File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd Line: 14
+    Info (12023): Found entity 1: clk_conv_1hz File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/mouse.vhd
-    Info (12022): Found design unit 1: MOUSE-behavior File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 18
-    Info (12023): Found entity 1: MOUSE File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 9
+    Info (12022): Found design unit 1: MOUSE-behavior File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 18
+    Info (12023): Found entity 1: MOUSE File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file integrated files/char_rom.vhd
-    Info (12022): Found design unit 1: char_rom-SYN File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 20
-    Info (12023): Found entity 1: char_rom File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 9
+    Info (12022): Found design unit 1: char_rom-SYN File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 20
+    Info (12023): Found entity 1: char_rom File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file speed_calc.vhd
-    Info (12022): Found design unit 1: speed_calc-beh File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_calc.vhd Line: 11
-    Info (12023): Found entity 1: speed_calc File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_calc.vhd Line: 4
+    Info (12022): Found design unit 1: speed_calc-beh File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/speed_calc.vhd Line: 11
+    Info (12023): Found entity 1: speed_calc File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/speed_calc.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file speed_mod.vhd
-    Info (12022): Found design unit 1: speed_mod-behaviour File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd Line: 17
-    Info (12023): Found entity 1: speed_mod File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd Line: 10
+    Info (12022): Found design unit 1: speed_mod-behaviour File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd Line: 17
+    Info (12023): Found entity 1: speed_mod File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/speed_mod.vhd Line: 10
 Info (12127): Elaborating entity "test_playing" for the top level hierarchy
 Info (12128): Elaborating entity "pipe_tester" for hierarchy "pipe_tester:inst"
 Warning (275008): Primitive "OR2" of instance "inst10" not used
@@ -1335,11 +1336,11 @@ Warning (275008): Primitive "OR2" of instance "inst12" not used
 Warning (275008): Primitive "OR2" of instance "inst7" not used
 Info (12128): Elaborating entity "VGA_SYNC" for hierarchy "pipe_tester:inst|VGA_SYNC:inst"
 Info (12128): Elaborating entity "pll25Mhz" for hierarchy "pipe_tester:inst|pll25Mhz:inst1"
-Info (12128): Elaborating entity "pll25Mhz_0002" for hierarchy "pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz.vhd Line: 32
-Info (12128): Elaborating entity "altera_pll" for hierarchy "pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v Line: 85
+Info (12128): Elaborating entity "pll25Mhz_0002" for hierarchy "pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz.vhd Line: 32
+Info (12128): Elaborating entity "altera_pll" for hierarchy "pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v Line: 85
-Info (12133): Instantiated megafunction "pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v Line: 85
+Info (12133): Instantiated megafunction "pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i" with the following parameter: File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/pll25Mhz/pll25Mhz_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -1401,11 +1402,11 @@ Info (12133): Instantiated megafunction "pipe_tester:inst|pll25Mhz:inst1|pll25Mh
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "controller" for hierarchy "pipe_tester:inst|controller:inst4"
-Warning (10631): VHDL Process Statement warning at controller.vhd(21): inferring latch(es) for signal or variable "status", which holds its previous value in one or more paths through the process File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
-Warning (10631): VHDL Process Statement warning at controller.vhd(21): inferring latch(es) for signal or variable "detector_reset", which holds its previous value in one or more paths through the process File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
-Info (10041): Inferred latch for "detector_reset" at controller.vhd(21) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
-Info (10041): Inferred latch for "status[0]" at controller.vhd(21) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
-Info (10041): Inferred latch for "status[1]" at controller.vhd(21) File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at controller.vhd(21): inferring latch(es) for signal or variable "status", which holds its previous value in one or more paths through the process File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at controller.vhd(21): inferring latch(es) for signal or variable "detector_reset", which holds its previous value in one or more paths through the process File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
+Info (10041): Inferred latch for "detector_reset" at controller.vhd(21) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
+Info (10041): Inferred latch for "status[0]" at controller.vhd(21) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
+Info (10041): Inferred latch for "status[1]" at controller.vhd(21) File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/controller.vhd Line: 21
 Info (12128): Elaborating entity "player" for hierarchy "pipe_tester:inst|player:inst6"
 Info (12128): Elaborating entity "bouncy_ball" for hierarchy "pipe_tester:inst|bouncy_ball:inst8"
 Info (12128): Elaborating entity "height_gen" for hierarchy "pipe_tester:inst|height_gen:inst9"
@@ -1415,11 +1416,11 @@ Info (12128): Elaborating entity "rng2" for hierarchy "pipe_tester:inst|height_g
 Info (12128): Elaborating entity "speed_mod" for hierarchy "pipe_tester:inst|speed_mod:inst16"
 Info (12128): Elaborating entity "temp_score_gen" for hierarchy "pipe_tester:inst|temp_score_gen:inst17"
 Info (12128): Elaborating entity "clk_conv_1hz" for hierarchy "pipe_tester:inst|clk_conv_1hz:inst19"
-Warning (10492): VHDL Process Statement warning at clk_conv_1hz.vhd(29): signal "v_clk_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at clk_conv_1hz.vhd(29): signal "v_clk_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/clk_conv_1hz.vhd Line: 29
 Info (12128): Elaborating entity "char_rom" for hierarchy "pipe_tester:inst|char_rom:inst23"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 51
-Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 51
-Info (12133): Instantiated megafunction "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 51
+Info (12128): Elaborating entity "altsyncram" for hierarchy "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 51
+Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 51
+Info (12133): Instantiated megafunction "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component" with the following parameter: File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/char_rom.vhd Line: 51
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1435,46 +1436,46 @@ Info (12133): Instantiated megafunction "pipe_tester:inst|char_rom:inst23|altsyn
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_d5g1.tdf
-    Info (12023): Found entity 1: altsyncram_d5g1 File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/altsyncram_d5g1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_d5g1" for hierarchy "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+    Info (12023): Found entity 1: altsyncram_d5g1 File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/altsyncram_d5g1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_d5g1" for hierarchy "pipe_tester:inst|char_rom:inst23|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated" File: d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "welcome_text" for hierarchy "pipe_tester:inst|welcome_text:inst21"
 Info (12128): Elaborating entity "text_pos_gen" for hierarchy "pipe_tester:inst|text_pos_gen:inst15"
 Info (12128): Elaborating entity "collision_detection" for hierarchy "pipe_tester:inst|collision_detection:inst14"
 Info (12128): Elaborating entity "rgb_controller" for hierarchy "pipe_tester:inst|rgb_controller:inst22"
 Info (12128): Elaborating entity "MOUSE" for hierarchy "MOUSE:inst2"
-Warning (10036): Verilog HDL or VHDL warning at mouse.vhd(25): object "CHARIN" assigned a value but never read File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 25
-Warning (10492): VHDL Process Statement warning at mouse.vhd(151): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 151
-Warning (10492): VHDL Process Statement warning at mouse.vhd(155): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 155
-Warning (10492): VHDL Process Statement warning at mouse.vhd(156): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 156
-Warning (10492): VHDL Process Statement warning at mouse.vhd(157): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 157
+Warning (10036): Verilog HDL or VHDL warning at mouse.vhd(25): object "CHARIN" assigned a value but never read File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at mouse.vhd(151): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 151
+Warning (10492): VHDL Process Statement warning at mouse.vhd(155): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 155
+Warning (10492): VHDL Process Statement warning at mouse.vhd(156): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 156
+Warning (10492): VHDL Process Statement warning at mouse.vhd(157): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 157
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipe_tester:inst|text_pos_gen:inst15|Mod0" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 156
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipe_tester:inst|text_pos_gen:inst15|Div0" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 155
-Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Mod0" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 156
-Info (12133): Instantiated megafunction "pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Mod0" with the following parameter: File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 156
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipe_tester:inst|text_pos_gen:inst15|Mod0" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 156
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipe_tester:inst|text_pos_gen:inst15|Div0" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 155
+Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Mod0" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 156
+Info (12133): Instantiated megafunction "pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Mod0" with the following parameter: File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 156
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "8"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_c2m.tdf
-    Info (12023): Found entity 1: lpm_divide_c2m File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/lpm_divide_c2m.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_c2m File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/lpm_divide_c2m.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_fkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_fkh File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/sign_div_unsign_fkh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_fkh File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/sign_div_unsign_fkh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4te.tdf
-    Info (12023): Found entity 1: alt_u_div_4te File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/alt_u_div_4te.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Div0" File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 155
-Info (12133): Instantiated megafunction "pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Div0" with the following parameter: File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 155
+    Info (12023): Found entity 1: alt_u_div_4te File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/alt_u_div_4te.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Div0" File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 155
+Info (12133): Instantiated megafunction "pipe_tester:inst|text_pos_gen:inst15|lpm_divide:Div0" with the following parameter: File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/text_pos_gen.vhd Line: 155
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_5am.tdf
-    Info (12023): Found entity 1: lpm_divide_5am File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/lpm_divide_5am.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_5am File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/lpm_divide_5am.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/sign_div_unsign_bkh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/sign_div_unsign_bkh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_sse.tdf
-    Info (12023): Found entity 1: alt_u_div_sse File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/db/alt_u_div_sse.tdf Line: 22
-Info (13000): Registers with preset signals will power-up high File: C:/Users/harri/Documents/GitHub/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 146
+    Info (12023): Found entity 1: alt_u_div_sse File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/db/alt_u_div_sse.tdf Line: 22
+Info (13000): Registers with preset signals will power-up high File: E:/COMPSYS305/305_miniproject/COMPSYS305-project-G32/Flappy Bird Demo/integrated files/mouse.vhd Line: 146
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity does not exist in design
@@ -1504,9 +1505,9 @@ Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity do
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV_Default -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 4 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
-Warning: RST port on the PLL is not properly connected on instance pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
+Warning: RST port on the PLL is not properly connected on instance pipe_tester:inst|pll25Mhz:inst1|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Warning: RST port on the PLL is not properly connected on instance pll25Mhz:inst3|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
+Warning: RST port on the PLL is not properly connected on instance pll25Mhz:inst3|pll25Mhz_0002:pll25mhz_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/quartus/quartus_18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
 Info (21057): Implemented 833 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
@@ -1516,9 +1517,9 @@ Info (21057): Implemented 833 device resources after synthesis - the final resou
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 2 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 4876 megabytes
-    Info: Processing ended: Mon May 29 01:29:46 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 4940 megabytes
+    Info: Processing ended: Mon May 29 19:14:44 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:05
 
 
