@@ -1,5 +1,5 @@
 Flow report for pipe_tester
-Mon May 29 21:02:05 2023
+Mon May 29 21:34:48 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon May 29 21:02:00 2023       ;
+; Flow Status                     ; Successful - Mon May 29 21:34:43 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipe_tester                                 ;
-; Top-level Entity Name           ; test_playing                                ;
+; Top-level Entity Name           ; pipe_tester                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 415 / 18,480 ( 2 % )                        ;
-; Total registers                 ; 314                                         ;
-; Total pins                      ; 11 / 224 ( 5 % )                            ;
+; Logic utilization (in ALMs)     ; 401 / 18,480 ( 2 % )                        ;
+; Total registers                 ; 261                                         ;
+; Total pins                      ; 10 / 224 ( 4 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 8,192 / 3,153,920 ( < 1 % )                 ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/29/2023 21:01:03 ;
+; Start date & time ; 05/29/2023 21:33:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipe_tester         ;
 +-------------------+---------------------+
@@ -79,23 +79,22 @@ refer to the applicable agreement for further details.
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 ; BLOCK_DESIGN_NAMING                 ; QuartusII                              ; Auto          ; --             ; --         ;
-; COMPILER_SIGNATURE_ID               ; 48599046368404.168535086222192         ; --            ; --             ; --         ;
+; COMPILER_SIGNATURE_ID               ; 48599046368404.168535281716828         ; --            ; --             ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --             ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --             ; --         ;
 ; MISC_FILE                           ; pll25Mhz.cmp                           ; --            ; --             ; --         ;
 ; MISC_FILE                           ; pll25Mhz_sim/pll25Mhz.vho              ; --            ; --             ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE0_CV_Default ; Top        ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; test_playing   ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --             ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE0_CV_Default ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; test_playing   ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --             ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DE0_CV_Default ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; test_playing   ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --             ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --             ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --             ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --             ; --         ;
 ; SPD_FILE                            ; pll25Mhz.spd                           ; --            ; --             ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                     ; --            ; --             ; --         ;
-; TOP_LEVEL_ENTITY                    ; test_playing                           ; pipe_tester   ; --             ; --         ;
 +-------------------------------------+----------------------------------------+---------------+----------------+------------+
 
 
@@ -104,11 +103,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4965 MB             ; 00:00:05                           ;
-; Fitter               ; 00:00:45     ; 1.1                     ; 7402 MB             ; 00:00:48                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4827 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.9                     ; 5248 MB             ; 00:00:04                           ;
-; Total                ; 00:00:59     ; --                      ; --                  ; 00:00:58                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4926 MB             ; 00:00:05                           ;
+; Fitter               ; 00:00:54     ; 1.1                     ; 7439 MB             ; 00:00:54                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4822 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:04     ; 2.0                     ; 5248 MB             ; 00:00:04                           ;
+; Total                ; 00:01:07     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
