@@ -18,14 +18,16 @@ BEGIN
 
 	game_mode <= mode1 & mode2;
 	
-	STATUS_CONTROLLER : PROCESS(start, dead)
+	STATUS_CONTROLLER : PROCESS(clk, start, dead)
 	BEGIN
-		IF (start = '1') THEN
-			status <= "01";
-			detector_reset <= '0';
-		ELSIF (dead = '1') THEN
-			status <= "00";
-			detector_reset <= '1';
+		IF (rising_edge(clk)) THEN
+			IF (start = '1') THEN
+				status <= "01";
+				detector_reset <= '0';
+			ELSIF (dead = '1') THEN
+				status <= "00";
+				detector_reset <= '1';
+			END IF;
 		END IF;
 	END PROCESS;
 	
